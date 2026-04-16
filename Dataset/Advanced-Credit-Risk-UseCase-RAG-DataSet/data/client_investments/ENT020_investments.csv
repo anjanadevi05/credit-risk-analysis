@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT020,Entity 020,Equity,Helios Materials,Saudi Arabia,Healthcare,No,7.6,,,,XX923452716,28.71,,Monthly,No,14.91,8.37,
+H02,ENT020,Entity 020,Equity,Summit Tech,Canada,Utilities,No,21.33,,,,XX185734598,54.47,,Monthly,No,1.41,15.89,
+H03,ENT020,Entity 020,Government Bond,Atlas Pharma,France,Utilities,No,,115.31,6.74,2028-01-14,XX737321114,25.46,,Weekly,No,6.97,7.43,
+H04,ENT020,Entity 020,Government Bond,Orion Telecom,Australia,Telecommunications,No,,123.12,6.32,2035-05-09,XX490267806,38.58,,Monthly,No,6.07,11.25,
+H05,ENT020,Entity 020,Equity,Atlas Retail,Australia,Energy,No,15.89,,,,XX514875285,23.05,,Daily,No,-6.94,6.72,
+H06,ENT020,Entity 020,Term Deposit,Nimbus Retail,Spain,Utilities,No,,17.45,5.79,2032-08-21,XX146851285,57.09,BBB,Illiquid,No,-10.28,16.65,
+H07,ENT020,Entity 020,Corporate Bond,Atlas Metals,South Africa,Utilities,Yes,,66.59,8.51,2034-07-22,XX428522540,56.71,AA,Weekly,No,1.51,16.54,
+H08,ENT020,Entity 020,Term Deposit,Stellar Tech,Brazil,Industrials,No,,170.77,3.79,2028-03-25,XX346816823,58.75,AAA,Illiquid,No,-11.09,17.14,

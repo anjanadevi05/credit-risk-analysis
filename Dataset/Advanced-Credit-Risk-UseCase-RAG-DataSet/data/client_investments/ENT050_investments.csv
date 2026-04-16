@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT050,Entity 050,Term Deposit,Summit Materials,Mexico,Industrials,Yes,,92.24,4.03,2028-09-16,XX905281477,41.36,A,Daily,Yes,16.19,12.64,
+H02,ENT050,Entity 050,Equity,Beta Capital,Italy,Technology,No,32.81,,,,XX495983187,47.46,,Illiquid,No,7.23,14.51,
+H03,ENT050,Entity 050,Equity,Summit Metals,Brazil,Energy,No,11.15,,,,XX320849387,46.15,,Monthly,No,-18.79,14.11,
+H04,ENT050,Entity 050,Corporate Bond,Stellar Logistics,Mexico,Telecommunications,No,,11.33,7.85,2035-02-01,XX131683790,30.7,BB,Daily,No,-4.57,9.39,
+H05,ENT050,Entity 050,Equity,Frontier Materials,India,Consumer,No,1.65,,,,XX122099402,40.07,,Weekly,No,24.29,12.25,
+H06,ENT050,Entity 050,Equity,Pioneer Retail,Singapore,Industrials,Yes,32.09,,,,XX186933963,38.56,,Monthly,No,17.12,11.79,
+H07,ENT050,Entity 050,Fund,Evergreen Metals,UAE,Telecommunications,Yes,,,,,XX491652318,49.35,A,Daily,Yes,-10.44,15.09,
+H08,ENT050,Entity 050,Term Deposit,Zenith Brands,Australia,Real Estate,No,,97.2,2.13,2034-01-02,XX541238113,33.45,BBB,Illiquid,No,12.4,10.23,

@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT005,Entity 005,Corporate Bond,Keystone Realty,China,Technology,No,,118.1,2.17,2030-09-13,XX505189206,12.14,A,Daily,No,22.65,6.94,
+H02,ENT005,Entity 005,Term Deposit,Helios Pharma,Brazil,Healthcare,No,,32.01,8.94,2026-10-24,XX990680940,4.23,BB,Monthly,No,17.54,2.42,
+H03,ENT005,Entity 005,Equity,Keystone Power,Canada,Materials,No,10.55,,,,XX462912420,41.46,,Monthly,No,13.48,23.7,
+H04,ENT005,Entity 005,Equity,Vertex Industries,South Africa,Utilities,No,15.64,,,,XX193476936,18.11,,Monthly,No,9.21,10.35,
+H05,ENT005,Entity 005,Fund,Frontier Foods,Italy,Energy,No,,,,,XX606877215,42.58,BBB,Monthly,No,16.07,24.34,
+H06,ENT005,Entity 005,Term Deposit,Stellar Telecom,Singapore,Telecommunications,No,,120.84,4.77,2032-04-25,XX599204481,38.59,BBB,Daily,No,22.98,22.06,
+H07,ENT005,Entity 005,Term Deposit,Delta Power,United States,Financials,No,,146.02,7.31,2026-08-22,XX393382901,17.85,A,Weekly,No,1.01,10.2,

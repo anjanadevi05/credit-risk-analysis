@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT046,Entity 046,Equity,Orion Metals,Brazil,Technology,No,3.67,,,,XX855191908,11.82,,Daily,No,22.1,16.32,
+H02,ENT046,Entity 046,Government Bond,Beta Materials,Indonesia,Energy,No,,21.22,8.72,2033-10-06,XX628263515,12.78,,Daily,Yes,0.6,17.65,
+H03,ENT046,Entity 046,Fund,Alpha Capital,Italy,Materials,No,,,,,XX576079730,11.05,BB,Daily,No,22.16,15.26,
+H04,ENT046,Entity 046,Fund,Beta Tech,Saudi Arabia,Healthcare,No,,,,,XX323043841,9.94,AA,Weekly,No,23.24,13.73,
+H05,ENT046,Entity 046,Fund,Helios Realty,South Africa,Utilities,No,,,,,XX340195685,7.16,BBB,Daily,No,7.59,9.89,
+H06,ENT046,Entity 046,Equity,Summit Logistics,Mexico,Financials,No,4.16,,,,XX248951154,5.49,,Illiquid,No,-16.13,7.58,
+H07,ENT046,Entity 046,Term Deposit,Aurora Materials,Italy,Real Estate,No,,180.7,8.41,2026-06-26,XX932696339,14.18,BBB,Illiquid,No,20.26,19.58,

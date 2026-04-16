@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT031,Entity 031,Fund,Frontier Materials,China,Industrials,No,,,,,XX941553436,24.71,BBB,Weekly,Yes,20.18,21.86,
+H02,ENT031,Entity 031,Corporate Bond,Vertex Power,Japan,Financials,No,,157.21,7.65,2028-04-19,XX953063934,36.96,B,Daily,No,21.91,32.7,
+H03,ENT031,Entity 031,Fund,Beta Logistics,Italy,Financials,No,,,,,XX698463982,5.28,A,Daily,No,0.18,4.67,
+H04,ENT031,Entity 031,Term Deposit,Orion Tech,India,Real Estate,No,,156.92,5.04,2030-06-20,XX539238265,9.1,AA,Monthly,No,3.12,8.05,
+H05,ENT031,Entity 031,Term Deposit,Vertex Holdings,Italy,Real Estate,No,,120.47,5.62,2031-08-22,XX399686271,10.12,BBB,Weekly,No,2.67,8.95,
+H06,ENT031,Entity 031,Fund,Aurora Pharma,UAE,Healthcare,No,,,,,XX156128799,26.87,BBB,Daily,No,18.45,23.77,

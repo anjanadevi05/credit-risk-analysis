@@ -1,0 +1,52 @@
+-- Create the database
+-- Create the database
+CREATE DATABASE IF NOT EXISTS company_data;
+USE company_data;
+
+-- Create the table matching the dataset columns
+CREATE TABLE IF NOT EXISTS entities_final_1 (
+    entity_id VARCHAR(20) PRIMARY KEY,
+    entity_name VARCHAR(255),
+    sector VARCHAR(100),
+    country VARCHAR(100),
+    revenue_usd_m FLOAT,
+    ebitda_margin_pct FLOAT,
+    ebit_margin_pct FLOAT,
+    cash_usd_m FLOAT,
+    total_assets_usd_m FLOAT,
+    equity_usd_m FLOAT,
+    net_debt_usd_m FLOAT,
+    debt_to_equity FLOAT,
+    interest_expense_usd_m FLOAT,
+    interest_coverage FLOAT,
+    operating_cf_usd_m FLOAT,
+    capex_usd_m FLOAT,
+    fcf_usd_m FLOAT,
+    dscr FLOAT,
+    current_ratio FLOAT,
+    quick_ratio FLOAT,
+    dso_days FLOAT,
+    dpo_days FLOAT,
+    dio_days FLOAT,
+    revenue_cagr_3y_pct FLOAT,
+    years_in_operation INT,
+    ownership_type VARCHAR(50),
+    auditor_tier VARCHAR(50),
+    governance_score_0_100 INT,
+    esg_controversies_3y INT,
+    country_risk_0_100 INT,
+    industry_cyclicality VARCHAR(50),
+    fx_revenue_pct FLOAT,
+    hedging_policy VARCHAR(50),
+    collateral_coverage_pct FLOAT,
+    covenant_quality VARCHAR(50),
+    payment_incidents_12m INT,
+    legal_disputes_open INT,
+    sanctions_exposure VARCHAR(50),
+    financials_audited VARCHAR(10),
+    PD_1y_pct FLOAT,
+    LGD_pct FLOAT,
+    EAD_usd_m FLOAT,
+    risk_bucket VARCHAR(20),
+    implied_rating VARCHAR(10)
+);

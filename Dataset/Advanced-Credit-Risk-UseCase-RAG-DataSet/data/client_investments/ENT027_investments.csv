@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT027,Entity 027,Equity,Pioneer Realty,South Africa,Materials,No,1.61,,,,XX216451582,22.41,,Monthly,No,20.8,11.62,
+H02,ENT027,Entity 027,Corporate Bond,Stellar Power,UAE,Energy,No,,25.39,3.24,2033-01-22,XX135479103,11.82,BBB,Illiquid,No,14.93,6.13,
+H03,ENT027,Entity 027,Government Bond,Helios Power,Brazil,Healthcare,No,,137.35,7.02,2029-05-28,XX733061841,28.09,,Illiquid,No,8.38,14.57,
+H04,ENT027,Entity 027,Government Bond,Vertex Tech,Canada,Utilities,No,,141.68,8.26,2033-03-20,XX904339439,4.28,,Illiquid,No,12.52,2.22,
+H05,ENT027,Entity 027,Fund,Frontier Realty,Canada,Energy,No,,,,,XX777724429,19.83,AA,Weekly,No,16.66,10.29,
+H06,ENT027,Entity 027,Term Deposit,Aurora Telecom,Italy,Telecommunications,No,,139.94,8.56,2034-11-14,XX943108912,43.37,AA,Weekly,No,13.36,22.5,
+H07,ENT027,Entity 027,Corporate Bond,Zenith Materials,Saudi Arabia,Utilities,No,,199.76,5.12,2026-07-01,XX858772398,56.7,BBB,Weekly,Yes,-2.6,29.41,
+H08,ENT027,Entity 027,Term Deposit,Beta Realty,Indonesia,Healthcare,No,,130.64,5.96,2026-04-16,XX890792510,6.29,AA,Monthly,No,14.49,3.26,

@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT009,Entity 009,Term Deposit,Beta Foods,Germany,Healthcare,Yes,,142.94,6.29,2031-04-15,XX763858152,34.66,BBB,Weekly,No,20.36,15.39,
+H02,ENT009,Entity 009,Equity,Helios Industries,Italy,Telecommunications,No,18.9,,,,XX634376369,60.06,,Monthly,No,-10.11,26.67,
+H03,ENT009,Entity 009,Fund,Alpha Holdings,China,Materials,No,,,,,XX244718151,25.62,AA,Illiquid,No,7.4,11.38,
+H04,ENT009,Entity 009,Equity,Vertex Resources,Australia,Energy,No,28.41,,,,XX828969981,43.71,,Monthly,Yes,-8.44,19.41,
+H05,ENT009,Entity 009,Government Bond,Stellar Resources,United Kingdom,Technology,No,,154.16,4.29,2030-03-08,XX244428847,61.13,,Daily,No,-12.88,27.15,

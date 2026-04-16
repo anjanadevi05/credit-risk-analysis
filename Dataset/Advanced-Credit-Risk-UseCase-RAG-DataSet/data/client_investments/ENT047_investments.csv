@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT047,Entity 047,Term Deposit,Keystone Materials,India,Consumer,No,,106.07,2.82,2034-05-27,XX677589936,15.92,B,Illiquid,No,6.63,20.76,
+H02,ENT047,Entity 047,Government Bond,Nimbus Foods,South Africa,Telecommunications,Yes,,8.31,2.32,2033-09-20,XX964305846,11.58,,Illiquid,No,-5.02,15.1,
+H03,ENT047,Entity 047,Equity,Summit Foods,China,Energy,No,17.6,,,,XX684449283,13.74,,Daily,No,-13.4,17.92,
+H04,ENT047,Entity 047,Term Deposit,Alpha Logistics,Saudi Arabia,Financials,Yes,,166.04,8.46,2026-12-22,XX555808732,13.54,AAA,Monthly,No,-8.66,17.66,
+H05,ENT047,Entity 047,Government Bond,Evergreen Brands,United Kingdom,Telecommunications,No,,89.1,4.4,2032-07-02,XX943804443,0.61,,Monthly,No,11.89,0.8,
+H06,ENT047,Entity 047,Term Deposit,Alpha Telecom,China,Utilities,Yes,,160.99,2.94,2032-08-13,XX923285395,15.8,BBB,Weekly,No,12.42,20.61,
+H07,ENT047,Entity 047,Corporate Bond,Alpha Resources,Mexico,Financials,No,,12.53,7.66,2028-12-14,XX611135618,5.49,AA,Weekly,No,9.2,7.16,

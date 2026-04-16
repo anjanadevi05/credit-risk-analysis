@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT038,Entity 038,Term Deposit,Atlas Capital,Spain,Technology,No,,174.38,4.97,2028-02-07,XX841678880,1.11,BBB,Monthly,No,1.02,2.55,
+H02,ENT038,Entity 038,Term Deposit,Beta Materials,Saudi Arabia,Technology,No,,130.46,4.27,2032-10-05,XX264781866,7.15,BBB,Illiquid,Yes,20.3,16.41,
+H03,ENT038,Entity 038,Government Bond,Omega Resources,United Kingdom,Healthcare,No,,194.25,5.58,2027-07-07,XX783546591,5.06,,Daily,No,-19.46,11.62,
+H04,ENT038,Entity 038,Equity,Pioneer Pharma,China,Real Estate,No,29.99,,,,XX345499859,10.35,,Daily,No,-12.71,23.76,
+H05,ENT038,Entity 038,Corporate Bond,Evergreen Metals,UAE,Real Estate,No,,121.05,2.15,2034-11-19,XX927624992,3.96,A,Weekly,No,-8.35,9.09,
+H06,ENT038,Entity 038,Fund,Atlas Resources,Canada,Healthcare,No,,,,,XX821919755,7.8,BB,Daily,Yes,-0.11,17.91,
+H07,ENT038,Entity 038,Term Deposit,Zenith Tech,Indonesia,Energy,No,,129.42,6.96,2026-02-17,XX734314819,5.64,BBB,Illiquid,No,6.7,12.95,
+H08,ENT038,Entity 038,Government Bond,Beta Holdings,United Kingdom,Materials,No,,186.55,3.05,2032-09-05,XX153402842,2.49,,Illiquid,No,2.61,5.72,

@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT037,Entity 037,Term Deposit,Keystone Brands,Singapore,Materials,No,,85.1,6.9,2030-03-23,XX522724754,89.37,BBB,Weekly,No,24.93,26.27,
+H02,ENT037,Entity 037,Corporate Bond,Vertex Materials,Mexico,Telecommunications,No,,24.89,8.43,2032-05-03,XX543464347,21.63,A,Daily,No,-8.86,6.36,
+H03,ENT037,Entity 037,Corporate Bond,Vertex Pharma,Indonesia,Real Estate,No,,130.82,4.93,2027-05-21,XX667684939,2.31,A,Weekly,No,0.97,0.68,
+H04,ENT037,Entity 037,Government Bond,Keystone Holdings,Brazil,Healthcare,No,,25.46,2.35,2033-08-16,XX880263450,34.56,,Daily,No,8.77,10.16,
+H05,ENT037,Entity 037,Equity,Frontier Holdings,United Kingdom,Real Estate,No,33.72,,,,XX280043492,75.96,,Weekly,No,-12.86,22.33,
+H06,ENT037,Entity 037,Government Bond,Gamma Foods,Saudi Arabia,Consumer,No,,175.07,7.23,2034-05-26,XX308896547,11.31,,Monthly,Yes,-11.93,3.32,
+H07,ENT037,Entity 037,Corporate Bond,Zenith Metals,Japan,Technology,No,,143.6,5.55,2033-12-12,XX348860963,57.76,BBB,Monthly,No,23.01,16.98,
+H08,ENT037,Entity 037,Corporate Bond,Stellar Capital,Japan,Utilities,No,,19.09,2.67,2034-08-09,XX701154698,47.29,A,Daily,Yes,-13.88,13.9,

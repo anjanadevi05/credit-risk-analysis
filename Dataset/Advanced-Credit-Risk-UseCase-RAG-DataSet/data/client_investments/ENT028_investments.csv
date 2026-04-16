@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT028,Entity 028,Government Bond,Vertex Telecom,United States,Telecommunications,No,,14.44,3.52,2033-07-06,XX504132785,63.27,,Daily,No,-2.6,29.3,
+H02,ENT028,Entity 028,Fund,Atlas Realty,Italy,Energy,No,,,,,XX845113619,17.11,BB,Daily,Yes,7.47,7.92,
+H03,ENT028,Entity 028,Government Bond,Gamma Capital,Turkey,Financials,No,,5.2,5.65,2027-05-08,XX297738108,16.39,,Illiquid,No,14.29,7.59,
+H04,ENT028,Entity 028,Government Bond,Alpha Power,India,Telecommunications,No,,60.68,2.04,2035-04-05,XX258232143,47.88,,Monthly,No,-0.55,22.17,
+H05,ENT028,Entity 028,Fund,Orion Telecom,China,Energy,No,,,,,XX625110958,58.14,BBB,Monthly,No,20.51,26.92,
+H06,ENT028,Entity 028,Government Bond,Pioneer Retail,Turkey,Healthcare,No,,104.73,7.57,2034-09-08,XX400749896,13.15,,Daily,No,-17.05,6.09,

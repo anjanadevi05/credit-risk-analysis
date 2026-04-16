@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT010,Entity 010,Term Deposit,Frontier Telecom,Mexico,Energy,Yes,,9.39,4.39,2028-12-23,XX109641183,25.99,BBB,Weekly,Yes,15.63,35.72,
+H02,ENT010,Entity 010,Term Deposit,Vertex Industries,Indonesia,Materials,No,,179.61,6.16,2033-03-16,XX938693921,10.3,A,Daily,No,-13.06,14.15,
+H03,ENT010,Entity 010,Equity,Nimbus Capital,Singapore,Technology,No,34.97,,,,XX263815548,8.62,,Monthly,No,-0.23,11.85,
+H04,ENT010,Entity 010,Corporate Bond,Vertex Foods,India,Consumer,No,,163.68,2.0,2029-09-14,XX876103559,19.98,A,Daily,No,24.71,27.46,
+H05,ENT010,Entity 010,Fund,Evergreen Industries,Brazil,Consumer,No,,,,,XX159177103,7.88,AAA,Monthly,No,4.99,10.83,

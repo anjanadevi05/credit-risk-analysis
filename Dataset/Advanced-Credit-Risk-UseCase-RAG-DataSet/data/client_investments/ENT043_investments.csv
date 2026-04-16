@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT043,Entity 043,Government Bond,Gamma Resources,Brazil,Energy,No,,143.53,6.6,2033-02-06,XX298886863,1.68,,Weekly,No,19.43,0.47,
+H02,ENT043,Entity 043,Equity,Evergreen Materials,United States,Utilities,No,10.81,,,,XX482796137,6.12,,Weekly,Yes,10.44,1.73,
+H03,ENT043,Entity 043,Corporate Bond,Pioneer Logistics,Saudi Arabia,Industrials,No,,136.59,7.17,2032-01-28,XX752861893,80.49,AA,Monthly,Yes,-6.06,22.73,
+H04,ENT043,Entity 043,Corporate Bond,Omega Pharma,France,Consumer,No,,71.07,4.52,2031-06-21,XX875646394,84.28,A,Daily,No,9.55,23.8,
+H05,ENT043,Entity 043,Equity,Orion Materials,United Kingdom,Energy,No,8.98,,,,XX692725117,84.91,,Weekly,No,8.15,23.98,
+H06,ENT043,Entity 043,Term Deposit,Summit Telecom,China,Industrials,No,,26.65,6.84,2028-09-15,XX930077323,96.64,BBB,Weekly,No,-2.5,27.29,

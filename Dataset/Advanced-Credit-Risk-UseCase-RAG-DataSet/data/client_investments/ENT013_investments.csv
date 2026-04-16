@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT013,Entity 013,Corporate Bond,Vertex Materials,Netherlands,Energy,No,,174.96,4.97,2032-05-22,XX818264212,25.82,BBB,Monthly,No,-18.76,23.76,
+H02,ENT013,Entity 013,Government Bond,Delta Pharma,United States,Real Estate,No,,42.82,3.69,2033-09-14,XX813131694,21.56,,Monthly,No,18.98,19.84,
+H03,ENT013,Entity 013,Fund,Omega Realty,China,Utilities,No,,,,,XX505733393,17.31,B,Daily,No,-8.13,15.93,
+H04,ENT013,Entity 013,Government Bond,Atlas Holdings,Indonesia,Materials,No,,77.43,8.45,2028-10-05,XX788753731,0.67,,Weekly,No,22.68,0.62,
+H05,ENT013,Entity 013,Government Bond,Delta Power,South Africa,Real Estate,No,,78.26,2.28,2029-11-05,XX493261481,31.98,,Daily,No,-11.28,29.43,
+H06,ENT013,Entity 013,Government Bond,Helios Capital,Saudi Arabia,Consumer,No,,191.11,6.56,2034-10-23,XX897768919,11.32,,Daily,Yes,21.87,10.42,

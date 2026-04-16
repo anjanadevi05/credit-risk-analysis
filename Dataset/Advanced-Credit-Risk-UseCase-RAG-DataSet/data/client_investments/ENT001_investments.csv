@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT001,Entity 001,Equity,Aurora Holdings,UAE,Energy,No,22.03,,,,XX522328452,5.4,,Daily,No,21.63,18.25,
+H02,ENT001,Entity 001,Corporate Bond,Beta Resources,Australia,Industrials,Yes,,44.62,5.43,2032-01-25,XX822287835,1.37,BBB,Monthly,No,-9.62,4.63,
+H03,ENT001,Entity 001,Government Bond,Gamma Retail,Saudi Arabia,Utilities,No,,192.53,4.23,2026-08-06,XX732989386,0.59,,Daily,No,11.52,1.99,
+H04,ENT001,Entity 001,Government Bond,Alpha Resources,Italy,Healthcare,No,,88.81,4.49,2030-12-01,XX837043488,1.47,,Daily,No,16.12,4.97,
+H05,ENT001,Entity 001,Term Deposit,Evergreen Brands,Canada,Materials,No,,105.0,3.32,2030-09-06,XX464805958,5.23,BB,Illiquid,No,16.78,17.67,
+H06,ENT001,Entity 001,Term Deposit,Pioneer Tech,Australia,Financials,No,,153.53,4.71,2034-04-23,XX269606187,7.66,AAA,Illiquid,No,-17.56,25.89,
+H07,ENT001,Entity 001,Term Deposit,Omega Resources,Indonesia,Financials,No,,121.69,5.69,2026-02-17,XX819813152,4.12,BB,Daily,Yes,-17.0,13.92,
+H08,ENT001,Entity 001,Corporate Bond,Keystone Telecom,Singapore,Financials,No,,85.33,6.36,2034-06-11,XX808975911,3.75,BBB,Weekly,No,9.35,12.67,

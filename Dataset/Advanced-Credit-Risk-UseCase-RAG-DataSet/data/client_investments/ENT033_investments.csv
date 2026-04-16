@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT033,Entity 033,Equity,Orion Industries,Japan,Utilities,No,13.93,,,,XX381220761,12.86,,Daily,Yes,17.5,12.14,
+H02,ENT033,Entity 033,Government Bond,Aurora Retail,UAE,Financials,Yes,,47.66,2.7,2031-12-17,XX866875180,5.9,,Monthly,Yes,22.55,5.57,
+H03,ENT033,Entity 033,Term Deposit,Zenith Tech,Australia,Real Estate,No,,135.45,6.42,2033-01-23,XX472455260,5.94,AAA,Weekly,No,-8.38,5.61,
+H04,ENT033,Entity 033,Equity,Summit Pharma,Canada,Energy,No,8.41,,,,XX457372614,15.33,,Daily,No,-11.62,14.48,
+H05,ENT033,Entity 033,Term Deposit,Atlas Realty,United Kingdom,Utilities,No,,147.72,6.71,2034-12-25,XX539998311,23.24,AA,Daily,No,15.54,21.95,
+H06,ENT033,Entity 033,Government Bond,Zenith Foods,South Africa,Energy,No,,98.73,7.89,2027-03-18,XX239674401,12.38,,Monthly,No,17.99,11.69,
+H07,ENT033,Entity 033,Term Deposit,Atlas Holdings,United Kingdom,Energy,Yes,,39.1,7.59,2035-05-21,XX501793945,23.33,A,Daily,Yes,3.31,22.03,
+H08,ENT033,Entity 033,Fund,Helios Foods,Indonesia,Real Estate,No,,,,,XX713881420,6.92,BB,Daily,No,6.66,6.53,

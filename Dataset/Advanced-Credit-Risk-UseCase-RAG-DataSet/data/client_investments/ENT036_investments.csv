@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT036,Entity 036,Fund,Evergreen Holdings,Saudi Arabia,Healthcare,No,,,,,XX664680855,0.23,AA,Weekly,No,-17.16,0.27,
+H02,ENT036,Entity 036,Fund,Alpha Resources,Japan,Healthcare,No,,,,,XX400704234,13.04,AAA,Daily,No,2.45,15.5,
+H03,ENT036,Entity 036,Equity,Nimbus Resources,Indonesia,Materials,No,3.04,,,,XX220631440,20.77,,Illiquid,Yes,-5.32,24.69,
+H04,ENT036,Entity 036,Corporate Bond,Atlas Logistics,Indonesia,Technology,No,,173.32,7.59,2029-11-20,XX604879840,16.39,B,Monthly,No,15.81,19.48,
+H05,ENT036,Entity 036,Equity,Helios Realty,Netherlands,Energy,No,19.43,,,,XX880519597,23.65,,Weekly,Yes,-6.34,28.11,
+H06,ENT036,Entity 036,Government Bond,Keystone Resources,Brazil,Healthcare,No,,31.38,4.57,2031-08-02,XX176813844,10.04,,Daily,No,16.17,11.94,

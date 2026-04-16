@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT040,Entity 040,Corporate Bond,Stellar Tech,Mexico,Utilities,No,,148.78,5.26,2033-10-22,XX695606880,38.18,AAA,Illiquid,No,-0.18,15.62,
+H02,ENT040,Entity 040,Term Deposit,Keystone Industries,Canada,Materials,No,,32.11,4.8,2029-08-14,XX566154348,53.33,BB,Monthly,No,8.46,21.82,
+H03,ENT040,Entity 040,Equity,Alpha Telecom,China,Healthcare,No,4.7,,,,XX559368744,25.57,,Illiquid,No,-14.33,10.46,
+H04,ENT040,Entity 040,Equity,Omega Resources,UAE,Technology,No,12.21,,,,XX676389127,57.05,,Weekly,No,12.57,23.35,
+H05,ENT040,Entity 040,Term Deposit,Keystone Realty,South Africa,Healthcare,No,,14.24,4.15,2030-09-08,XX648847101,10.86,BBB,Monthly,No,20.07,4.44,
+H06,ENT040,Entity 040,Government Bond,Stellar Foods,Brazil,Financials,No,,39.55,6.14,2033-08-06,XX934786146,59.38,,Monthly,No,-17.94,24.3,

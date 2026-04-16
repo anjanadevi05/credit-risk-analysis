@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT006,Entity 006,Government Bond,Gamma Holdings,India,Consumer,No,,151.26,5.6,2028-10-26,XX943617232,54.19,,Daily,No,-14.55,18.73,
+H02,ENT006,Entity 006,Term Deposit,Nimbus Holdings,Australia,Financials,No,,23.08,2.32,2027-12-27,XX923523300,139.68,BBB,Weekly,No,12.51,48.29,
+H03,ENT006,Entity 006,Corporate Bond,Delta Realty,Japan,Materials,No,,57.57,4.35,2026-09-14,XX471829491,50.68,A,Monthly,No,10.27,17.52,
+H04,ENT006,Entity 006,Corporate Bond,Nimbus Retail,South Africa,Technology,No,,136.3,6.38,2035-11-05,XX523286457,7.37,BBB,Monthly,No,-15.82,2.55,
+H05,ENT006,Entity 006,Fund,Omega Brands,Indonesia,Telecommunications,No,,,,,XX406639134,37.34,AA,Daily,Yes,3.53,12.91,

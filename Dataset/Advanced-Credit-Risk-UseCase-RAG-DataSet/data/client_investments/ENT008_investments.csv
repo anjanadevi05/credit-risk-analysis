@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT008,Entity 008,Corporate Bond,Aurora Holdings,South Africa,Consumer,No,,111.86,2.57,2027-07-09,XX119683989,54.77,BBB,Illiquid,No,-2.33,17.8,
+H02,ENT008,Entity 008,Equity,Zenith Metals,Mexico,Utilities,No,7.01,,,,XX627669362,53.91,,Monthly,No,9.05,17.52,
+H03,ENT008,Entity 008,Fund,Alpha Capital,Italy,Consumer,No,,,,,XX619689202,19.36,AA,Illiquid,No,-17.85,6.29,
+H04,ENT008,Entity 008,Corporate Bond,Aurora Realty,Saudi Arabia,Utilities,No,,56.34,4.61,2031-01-12,XX815604220,73.62,BBB,Daily,No,10.62,23.92,
+H05,ENT008,Entity 008,Fund,Pioneer Metals,Turkey,Consumer,No,,,,,XX262688940,15.01,BB,Daily,No,-19.96,4.88,
+H06,ENT008,Entity 008,Equity,Frontier Capital,South Africa,Healthcare,No,20.12,,,,XX796171756,65.26,,Weekly,No,22.15,21.21,
+H07,ENT008,Entity 008,Corporate Bond,Orion Retail,Spain,Energy,No,,164.27,5.74,2026-01-22,XX132222611,25.81,A,Daily,Yes,19.82,8.39,

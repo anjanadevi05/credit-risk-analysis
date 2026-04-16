@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT016,Entity 016,Equity,Stellar Tech,China,Utilities,Yes,21.18,,,,XX124248345,54.82,,Weekly,Yes,9.27,23.81,
+H02,ENT016,Entity 016,Government Bond,Delta Foods,UAE,Materials,No,,141.27,6.53,2033-02-23,XX551401937,45.57,,Illiquid,No,20.25,19.79,
+H03,ENT016,Entity 016,Corporate Bond,Orion Metals,Saudi Arabia,Energy,No,,93.39,6.38,2027-07-20,XX240206270,26.37,A,Illiquid,No,0.64,11.45,
+H04,ENT016,Entity 016,Term Deposit,Gamma Resources,Netherlands,Financials,No,,133.03,5.63,2028-11-25,XX983836239,23.48,BB,Illiquid,No,7.19,10.2,
+H05,ENT016,Entity 016,Term Deposit,Alpha Metals,Japan,Energy,No,,102.56,2.31,2026-12-26,XX415052964,34.56,BBB,Daily,Yes,4.76,15.01,
+H06,ENT016,Entity 016,Term Deposit,Zenith Realty,Saudi Arabia,Technology,Yes,,35.8,8.84,2027-10-12,XX747905666,3.14,BBB,Weekly,No,-12.55,1.36,
+H07,ENT016,Entity 016,Corporate Bond,Summit Metals,UAE,Telecommunications,No,,196.05,3.92,2026-04-28,XX727893118,42.34,BBB,Weekly,No,7.51,18.39,

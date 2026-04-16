@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT041,Entity 041,Corporate Bond,Alpha Retail,Italy,Real Estate,No,,42.14,7.0,2031-02-26,XX296258696,51.36,BBB,Daily,No,1.19,19.53,
+H02,ENT041,Entity 041,Term Deposit,Pioneer Holdings,Japan,Materials,No,,58.69,8.68,2033-09-14,XX627467150,55.93,AAA,Daily,No,-10.36,21.27,
+H03,ENT041,Entity 041,Corporate Bond,Pioneer Retail,Canada,Energy,No,,57.34,4.96,2028-10-16,XX719208259,74.42,BBB,Illiquid,Yes,-2.67,28.3,
+H04,ENT041,Entity 041,Term Deposit,Gamma Capital,Indonesia,Financials,No,,50.84,7.72,2028-08-18,XX881763566,58.36,BBB,Monthly,No,10.89,22.19,
+H05,ENT041,Entity 041,Term Deposit,Frontier Materials,United States,Industrials,No,,101.78,3.49,2032-08-06,XX900943651,22.9,AA,Illiquid,No,-14.09,8.71,

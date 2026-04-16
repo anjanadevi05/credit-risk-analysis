@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT015,Entity 015,Fund,Pioneer Pharma,Brazil,Utilities,No,,,,,XX282600520,65.01,AA,Illiquid,No,0.41,41.85,
+H02,ENT015,Entity 015,Equity,Orion Tech,Australia,Materials,No,26.35,,,,XX416741319,41.62,,Monthly,Yes,2.48,26.79,
+H03,ENT015,Entity 015,Fund,Zenith Industries,Spain,Utilities,No,,,,,XX171405294,19.78,A,Monthly,No,20.08,12.73,
+H04,ENT015,Entity 015,Term Deposit,Summit Holdings,Indonesia,Financials,No,,171.33,8.56,2030-05-18,XX885677396,0.04,BBB,Illiquid,No,-2.77,0.03,
+H05,ENT015,Entity 015,Government Bond,Evergreen Retail,Germany,Technology,Yes,,166.4,2.26,2026-11-06,XX815799371,28.9,,Daily,No,10.65,18.6,

@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT049,Entity 049,Equity,Gamma Resources,India,Financials,No,14.78,,,,XX487963731,9.78,,Monthly,No,20.79,5.28,
+H02,ENT049,Entity 049,Government Bond,Zenith Holdings,United Kingdom,Real Estate,No,,107.02,4.16,2029-10-22,XX721515554,25.15,,Illiquid,No,12.82,13.57,
+H03,ENT049,Entity 049,Fund,Frontier Power,India,Consumer,No,,,,,XX902044815,1.72,AAA,Illiquid,No,16.24,0.93,
+H04,ENT049,Entity 049,Corporate Bond,Delta Capital,UAE,Telecommunications,Yes,,126.31,5.33,2032-04-28,XX228959367,29.46,B,Illiquid,Yes,17.53,15.89,
+H05,ENT049,Entity 049,Equity,Nimbus Retail,Netherlands,Financials,No,34.83,,,,XX982729259,29.43,,Daily,Yes,18.41,15.88,
+H06,ENT049,Entity 049,Fund,Orion Retail,South Africa,Healthcare,No,,,,,XX144159544,20.9,BBB,Monthly,Yes,2.63,11.28,
+H07,ENT049,Entity 049,Corporate Bond,Alpha Resources,Saudi Arabia,Energy,No,,191.49,7.37,2029-01-21,XX991824332,55.97,AAA,Illiquid,No,4.24,30.2,
+H08,ENT049,Entity 049,Term Deposit,Atlas Power,Australia,Healthcare,Yes,,5.29,8.68,2033-08-26,XX666234534,12.94,B,Monthly,Yes,6.42,6.98,

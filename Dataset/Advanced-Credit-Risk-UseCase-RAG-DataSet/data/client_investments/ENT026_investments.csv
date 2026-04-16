@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT026,Entity 026,Fund,Evergreen Foods,South Africa,Real Estate,No,,,,,XX595521679,7.4,A,Monthly,No,9.39,12.08,
+H02,ENT026,Entity 026,Government Bond,Vertex Brands,India,Financials,No,,66.79,7.45,2027-11-23,XX622842580,4.64,,Daily,No,-6.4,7.58,
+H03,ENT026,Entity 026,Fund,Pioneer Capital,Indonesia,Telecommunications,No,,,,,XX701343395,6.81,BB,Weekly,No,22.14,11.12,
+H04,ENT026,Entity 026,Term Deposit,Helios Capital,France,Utilities,No,,161.16,7.26,2031-12-06,XX640401856,8.45,AA,Monthly,No,-13.07,13.8,
+H05,ENT026,Entity 026,Government Bond,Nimbus Pharma,Mexico,Technology,No,,99.55,6.77,2034-10-13,XX204088472,9.44,,Weekly,No,12.44,15.41,
+H06,ENT026,Entity 026,Term Deposit,Zenith Foods,Germany,Healthcare,No,,189.83,2.89,2032-03-15,XX402909264,0.96,B,Daily,No,23.0,1.57,
+H07,ENT026,Entity 026,Term Deposit,Atlas Logistics,Italy,Industrials,No,,50.0,7.48,2030-06-07,XX677617586,7.03,A,Weekly,No,2.63,11.48,
+H08,ENT026,Entity 026,Term Deposit,Keystone Metals,India,Telecommunications,No,,53.42,3.78,2033-11-02,XX370715727,16.52,BBB,Daily,No,14.34,26.97,

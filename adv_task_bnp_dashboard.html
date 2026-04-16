@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Risk Dashboard</title>
+    <style>
+        /* =============================================================================
+           BNP PRUDENTIS - INTEGRATED CSS STYLING
+           ============================================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #003366 0%, #004080 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* CONTROL PANEL */
+        .control-panel {
+            background: white;
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .control-panel h2 {
+            color: #003366;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-group select {
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .filter-group select:focus {
+            border-color: #003366;
+            outline: none;
+        }
+
+        .generate-btn {
+            background: linear-gradient(135deg, #003366 0%, #004080 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            display: block;
+            margin: 0 auto;
+            min-width: 200px;
+        }
+
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 51, 102, 0.3);
+        }
+
+        .generate-btn:active {
+            transform: translateY(0);
+        }
+
+        /* RESULTS SECTION */
+        .results {
+            display: none;
+            background: white;
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .results.active {
+            display: block;
+        }
+
+        .results h2 {
+            color: #003366;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* ENTITY HEADER */
+        .entity-header {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #003366;
+        }
+
+        .entity-title {
+            font-size: 1.5rem;
+            color: #003366;
+            margin-bottom: 0.5rem;
+        }
+
+        .entity-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* METRICS GRID */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #f0f0f0;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .metric-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #003366;
+            margin: 0.5rem 0;
+        }
+
+        .metric-description {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* RISK BADGES */
+        .risk-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .risk-badge.low {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+
+        .risk-badge.medium {
+            background: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffeaa7;
+        }
+
+        .risk-badge.high {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+
+        /* ASSESSMENT DETAILS */
+        .assessment-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #003366;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .detail-card h3 {
+            color: #003366;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .score-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .score-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .rationale {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* RED FLAGS */
+        .red-flags {
+            background: #fff5f5;
+            border: 2px solid #fed7d7;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .red-flags h4 {
+            color: #c53030;
+            margin-bottom: 0.5rem;
+        }
+
+        .flag-item {
+            background: #feb2b2;
+            color: #742a2a;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+            font-weight: 500;
+        }
+
+        /* JUSTIFICATION */
+        .justification {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .justification h3 {
+            color: #003366;
+            margin-bottom: 1rem;
+        }
+
+        .justification-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .justification-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .justification-label {
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .justification-value {
+            color: #2d3748;
+            margin-left: 1rem;
+        }
+
+        /* DOWNLOAD SECTION */
+        .download-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #38a169 0%, #48bb78 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            margin: 0 10px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(56, 161, 105, 0.3);
+        }
+
+        /* LOADING */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+
+        .loading::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #003366;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .filters {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .assessment-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1>Advanced Credit Risk Assessment Platform</h1>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- CONTROL PANEL -->
+        <div class="control-panel">
+            <h2>📊 Generate Risk Assessment Report</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="entitySelect">Select Entity</label>
+                    <select id="entitySelect">
+                        <option value="">-- Choose Entity --</option>
+                        <option value="ENT001">ENT001 - Entity 001 (Utilities, South Africa)</option>
+                        <option value="ENT002">ENT002 - Entity 002 (Industrials, Italy)</option>
+                        <option value="ENT003">ENT003 - Entity 003 (Retail, United Kingdom)</option>
+                        <option value="ALL_ENTITIES">All Entities</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="countrySelect">Or Select by Country</label>
+                    <select id="countrySelect">
+                        <option value="">-- Choose Country --</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Italy">Italy</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="ALL_COUNTRIES">All Countries</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sectorSelect">Or Select by Sector</label>
+                    <select id="sectorSelect">
+                        <option value="">-- Choose Sector --</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Industrials">Industrials</option>
+                        <option value="Retail">Retail</option>
+                        <option value="ALL_SECTORS">All Sectors</option>
+                    </select>
+                </div>
+            </div>
+            <button class="generate-btn" onclick="generateReport()">🔬 Generate Ultra-Detailed Report</button>
+        </div>
+
+        <!-- RESULTS SECTION -->
+        <div id="results" class="results">
+            <h2>📋 Risk Assessment Results</h2>
+            <div id="reportContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // =============================================================================
+        // BNP PRUDENTIS - INTEGRATED JAVASCRIPT
+        // =============================================================================
+
+        // Entity data with comprehensive details
+        const entityData = {
+            'ENT001': {
+                id: 'ENT001',
+                name: 'Entity 001',
+                sector: 'Utilities',
+                country: 'South Africa',
+                revenue: 493,
+                financial_score: 55,
+                financial_tier: 'Micro Entity',
+                financial_rationale: 'Revenue $493M < $500M threshold indicates limited financial resources',
+                sector_score: 10,
+                sector_rationale: 'Regulated monopoly with stable cash flows and essential services',
+                country_score: 40,
+                country_rating: 'BB',
+                country_rationale: 'Structural challenges including high unemployment and political instability',
+                composite_score: 42.5,
+                final_evaluation: 'High Risk',
+                investment_risk: 'Medium',
+                red_flags: [
+                    'Small entity in high-risk jurisdiction',
+                    'High sovereign risk environment',
+                    'Severely limited financial capacity'
+                ],
+                evaluation_rationale: 'Red Flag Override: 3 red flags detected',
+                portfolio_holdings: 8,
+                max_concentration: 25.9,
+                top3_concentration: 61.8,
+                illiquid_pct: 37.5,
+                related_party_pct: 4.6
+            },
+            'ENT002': {
+                id: 'ENT002',
+                name: 'Entity 002',
+                sector: 'Industrials',
+                country: 'Italy',
+                revenue: 1809,
+                financial_score: 20,
+                financial_tier: 'Mid-Market Entity',
+                financial_rationale: 'Revenue $1,809M in $1,500M-$5,000M range indicates moderate resources',
+                sector_score: 25,
+                sector_rationale: 'Cyclical business model with capital intensity and trade exposure',
+                country_score: 25,
+                country_rating: 'BBB',
+                country_rationale: 'High debt burden with political instability and slow growth',
+                composite_score: 25.0,
+                final_evaluation: 'High Risk',
+                investment_risk: 'High',
+                red_flags: [
+                    'High investment concentration risk detected'
+                ],
+                evaluation_rationale: 'Red Flag Override: Portfolio concentration exceeds limits',
+                portfolio_holdings: 7,
+                max_concentration: 29.4,
+                top3_concentration: 78.7,
+                illiquid_pct: 42.9,
+                related_party_pct: 29.4
+            },
+            'ENT003': {
+                id: 'ENT003',
+                name: 'Entity 003',
+                sector: 'Retail',
+                country: 'United Kingdom',
+                revenue: 5636,
+                financial_score: 10,
+                financial_tier: 'Large Corporation',
+                financial_rationale: 'Revenue $5,636M > $5,000M threshold indicates strong financial capacity',
+                sector_score: 35,
+                sector_rationale: 'Consumer discretionary sector facing e-commerce disruption',
+                country_score: 8,
+                country_rating: 'AA+',
+                country_rationale: 'Developed economy with strong institutions despite Brexit',
+                composite_score: 20.0,
+                final_evaluation: 'Low Risk',
+                investment_risk: 'Medium',
+                red_flags: [],
+                evaluation_rationale: 'Composite score 20.0 ≤ 25 threshold',
+                portfolio_holdings: 8,
+                max_concentration: 23.6,
+                top3_concentration: 59.1,
+                illiquid_pct: 75.0,
+                related_party_pct: 15.9
+            }
+        };
+
+        // Clear other selects when one is chosen
+        function clearOtherSelects(current) {
+            const selects = ['entitySelect', 'countrySelect', 'sectorSelect'];
+            selects.forEach(id => {
+                if (id !== current) {
+                    document.getElementById(id).value = '';
+                }
+            });
+        }
+
+        // Add event listeners to selects
+        document.getElementById('entitySelect').addEventListener('change', () => clearOtherSelects('entitySelect'));
+        document.getElementById('countrySelect').addEventListener('change', () => clearOtherSelects('countrySelect'));
+        document.getElementById('sectorSelect').addEventListener('change', () => clearOtherSelects('sectorSelect'));
+
+        // Generate report based on selection
+        function generateReport() {
+            const entitySelect = document.getElementById('entitySelect').value;
+            const countrySelect = document.getElementById('countrySelect').value;
+            const sectorSelect = document.getElementById('sectorSelect').value;
+
+            // Show loading
+            const resultsDiv = document.getElementById('results');
+            const contentDiv = document.getElementById('reportContent');
+
+            resultsDiv.classList.add('active');
+            contentDiv.innerHTML = '<div class="loading">Generating ultra-detailed assessment...</div>';
+
+            // Simulate processing delay
+            setTimeout(() => {
+                let entitiesToShow = [];
+
+                // Determine which entities to show
+                if (entitySelect) {
+                    if (entitySelect === 'ALL_ENTITIES') {
+                        entitiesToShow = Object.keys(entityData);
+                    } else {
+                        entitiesToShow = [entitySelect];
+                    }
+                } else if (countrySelect) {
+                    if (countrySelect === 'ALL_COUNTRIES') {
+                        entitiesToShow = Object.keys(entityData);
+                    } else {
+                        entitiesToShow = Object.keys(entityData).filter(id =>
+                            entityData[id].country === countrySelect
+                        );
+                    }
+                } else if (sectorSelect) {
+                    if (sectorSelect === 'ALL_SECTORS') {
+                        entitiesToShow = Object.keys(entityData);
+                    } else {
+                        entitiesToShow = Object.keys(entityData).filter(id =>
+                            entityData[id].sector === sectorSelect
+                        );
+                    }
+                }
+
+                if (entitiesToShow.length === 0) {
+                    contentDiv.innerHTML = '<div class="entity-header"><div class="entity-title">⚠️ Please select an entity, country, or sector</div></div>';
+                    return;
+                }
+
+                // Generate report content
+                let reportHTML = '';
+
+                entitiesToShow.forEach(entityId => {
+                    const entity = entityData[entityId];
+                    reportHTML += generateEntityReport(entity);
+                });
+
+                contentDiv.innerHTML = reportHTML;
+            }, 1500);
+        }
+
+        // Generate individual entity report
+        function generateEntityReport(entity) {
+            const riskColor = entity.final_evaluation === 'High Risk' ? 'high' :
+                entity.final_evaluation === 'Medium Risk' ? 'medium' : 'low';
+
+            return `
+                <div class="entity-report">
+                    <div class="entity-header">
+                        <div class="entity-title">
+                            ${entity.final_evaluation === 'High Risk' ? '🔴' : entity.final_evaluation === 'Medium Risk' ? '🟡' : '🟢'} 
+                            ${entity.id} - ${entity.name}
+                        </div>
+                        <div class="entity-subtitle">
+                            ${entity.sector} • ${entity.country} • $${entity.revenue.toLocaleString()}M Revenue
+                        </div>
+                    </div>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-label">Final Risk Rating</div>
+                            <div class="metric-value">
+                                <span class="risk-badge ${riskColor}">${entity.final_evaluation}</span>
+                            </div>
+                            <div class="metric-description">Comprehensive Assessment</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Composite Score</div>
+                            <div class="metric-value">${entity.composite_score}</div>
+                            <div class="metric-description">Weighted Risk Score</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Investment Risk</div>
+                            <div class="metric-value">
+                                <span class="risk-badge ${entity.investment_risk === 'High' ? 'high' : entity.investment_risk === 'Medium' ? 'medium' : 'low'}">
+                                    ${entity.investment_risk}
+                                </span>
+                            </div>
+                            <div class="metric-description">Portfolio Analysis</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Red Flags</div>
+                            <div class="metric-value">${entity.red_flags.length}</div>
+                            <div class="metric-description">Critical Issues</div>
+                        </div>
+                    </div>
+                    
+                    <div class="assessment-details">
+                        <div class="detail-card">
+                            <h3>💰 Financial Capacity</h3>
+                            <div class="score-display">
+                                <span>Risk Score: ${entity.financial_score}</span>
+                                <span class="risk-badge ${entity.financial_score > 40 ? 'high' : entity.financial_score > 20 ? 'medium' : 'low'}">
+                                    ${entity.financial_score > 40 ? 'High Risk' : entity.financial_score > 20 ? 'Medium Risk' : 'Low Risk'}
+                                </span>
+                            </div>
+                            <p><strong>Classification:</strong> ${entity.financial_tier}</p>
+                            <p><strong>Revenue:</strong> $${entity.revenue.toLocaleString()}M</p>
+                            <p class="rationale"><strong>Rationale:</strong> ${entity.financial_rationale}</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h3>🏭 Sector Risk</h3>
+                            <div class="score-display">
+                                <span>Risk Score: ${entity.sector_score}</span>
+                                <span class="risk-badge ${entity.sector_score > 30 ? 'high' : entity.sector_score > 20 ? 'medium' : 'low'}">
+                                    ${entity.sector_score > 30 ? 'High Risk' : entity.sector_score > 20 ? 'Medium Risk' : 'Low Risk'}
+                                </span>
+                            </div>
+                            <p><strong>Sector:</strong> ${entity.sector}</p>
+                            <p class="rationale"><strong>Analysis:</strong> ${entity.sector_rationale}</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h3>🌍 Country Risk</h3>
+                            <div class="score-display">
+                                <span>Risk Score: ${entity.country_score}</span>
+                                <span class="risk-badge ${entity.country_score > 30 ? 'high' : entity.country_score > 15 ? 'medium' : 'low'}">
+                                    ${entity.country_score > 30 ? 'High Risk' : entity.country_score > 15 ? 'Medium Risk' : 'Low Risk'}
+                                </span>
+                            </div>
+                            <p><strong>Country:</strong> ${entity.country} (${entity.country_rating} Rating)</p>
+                            <p class="rationale"><strong>Analysis:</strong> ${entity.country_rationale}</p>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <h3>💼 Portfolio Analysis</h3>
+                            <p><strong>Holdings:</strong> ${entity.portfolio_holdings} investments</p>
+                            <p><strong>Max Concentration:</strong> ${entity.max_concentration}%</p>
+                            <p><strong>Top-3 Concentration:</strong> ${entity.top3_concentration}%</p>
+                            <p><strong>Illiquid Holdings:</strong> ${entity.illiquid_pct}%</p>
+                            <p><strong>Related Party:</strong> ${entity.related_party_pct}%</p>
+                        </div>
+                    </div>
+                    
+                    ${entity.red_flags.length > 0 ? `
+                        <div class="red-flags">
+                            <h4>🚨 Red Flags Detected (${entity.red_flags.length})</h4>
+                            ${entity.red_flags.map(flag => `<div class="flag-item">⚠️ ${flag}</div>`).join('')}
+                        </div>
+                    ` : '<div style="text-align: center; padding: 1rem; background: #f0f8f0; border-radius: 8px; color: #2d5016;"><strong>✅ No red flags detected</strong></div>'}
+                    
+                    <div class="justification">
+                        <h3>📋 Complete Assessment Justification</h3>
+                        <div class="justification-item">
+                            <div class="justification-label">Composite Score Calculation:</div>
+                            <div class="justification-value">
+                                (${entity.financial_score} × 0.40) + (${entity.sector_score} × 0.30) + (${entity.country_score} × 0.30) = ${entity.composite_score}
+                            </div>
+                        </div>
+                        <div class="justification-item">
+                            <div class="justification-label">Final Evaluation Logic:</div>
+                            <div class="justification-value">${entity.evaluation_rationale}</div>
+                        </div>
+                        <div class="justification-item">
+                            <div class="justification-label">Risk Weights Applied:</div>
+                            <div class="justification-value">
+                                Financial Capacity (40%) + Sector Risk (30%) + Country Risk (30%)
+                            </div>
+                        </div>
+                        <div class="justification-item">
+                            <div class="justification-label">Regulatory Compliance:</div>
+                            <div class="justification-value">
+                                Basel III capital adequacy, IFRS 9 expected credit loss, MiFID II suitability assessment
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="download-section">
+                        <h3>📄 Download Assessment Reports</h3>
+                        <button class="download-btn" onclick="downloadReport('${entity.id}', 'json')">
+                            📊 Download JSON Report
+                        </button>
+                        <button class="download-btn" onclick="downloadReport('${entity.id}', 'pdf')">
+                            📋 Download PDF Report
+                        </button>
+                    </div>
+                </div>
+                <hr style="margin: 3rem 0; border: 1px solid #e2e8f0;">
+            `;
+        }
+
+        // Download report function
+        function downloadReport(entityId, format) {
+            const entity = entityData[entityId];
+            const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
+
+            if (format === 'json') {
+                const reportData = {
+                    entity_metadata: {
+                        entity_id: entityId,
+                        entity_name: entity.name,
+                        assessment_timestamp: new Date().toISOString(),
+                        methodology: "BNP Prudentis Ultra-Detailed Risk Assessment v1.0"
+                    },
+                    comprehensive_assessment: entity,
+                    regulatory_compliance: ["Basel III", "IFRS 9", "MiFID II"],
+                    data_sources: {
+                        master_data: "credit_risk_dataset_50_entities.csv",
+                        portfolio_data: `${entityId}_investments.csv`,
+                        risk_models: "Moody's sector methodology + S&P sovereign ratings"
+                    }
+                };
+
+                const blob = new Blob([JSON.stringify(reportData, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `BNP_Prudentis_Assessment_${entityId}_${timestamp}.json`;
+                a.click();
+                URL.revokeObjectURL(url);
+
+            } else if (format === 'pdf') {
+                // For PDF, we'll create a printable version
+                const printWindow = window.open('', '_blank');
+                printWindow.document.write(`
+                    <html>
+                        <head>
+                            <title>BNP Prudentis Assessment - ${entityId}</title>
+                            <style>
+                                body { font-family: Arial, sans-serif; margin: 20px; }
+                                .header { text-align: center; margin-bottom: 30px; }
+                                .section { margin-bottom: 20px; }
+                                .metric { margin: 10px 0; }
+                                .red-flag { color: red; font-weight: bold; }
+                            </style>
+                        </head>
+                        <body>
+                            <div class="header">
+                                <h1>🏛️ BNP Prudentis Credit Risk Assessment</h1>
+                                <h2>${entityId} - ${entity.name}</h2>
+                                <p>Generated: ${new Date().toLocaleString()}</p>
+                            </div>
+                            <div class="section">
+                                <h3>Executive Summary</h3>
+                                <p><strong>Final Risk Rating:</strong> ${entity.final_evaluation}</p>
+                                <p><strong>Composite Score:</strong> ${entity.composite_score}</p>
+                                <p><strong>Investment Risk:</strong> ${entity.investment_risk}</p>
+                                <p><strong>Red Flags:</strong> ${entity.red_flags.length}</p>
+                            </div>
+                            <div class="section">
+                                <h3>Detailed Analysis</h3>
+                                <div class="metric"><strong>Financial Capacity:</strong> ${entity.financial_score} (${entity.financial_tier})</div>
+                                <div class="metric"><strong>Sector Risk:</strong> ${entity.sector_score} (${entity.sector})</div>
+                                <div class="metric"><strong>Country Risk:</strong> ${entity.country_score} (${entity.country})</div>
+                            </div>
+                            ${entity.red_flags.length > 0 ? `
+                                <div class="section">
+                                    <h3>Red Flags</h3>
+                                    ${entity.red_flags.map(flag => `<p class="red-flag">⚠️ ${flag}</p>`).join('')}
+                                </div>
+                            ` : ''}
+                            <div class="section">
+                                <h3>Assessment Justification</h3>
+                                <p><strong>Calculation:</strong> (${entity.financial_score} × 0.40) + (${entity.sector_score} × 0.30) + (${entity.country_score} × 0.30) = ${entity.composite_score}</p>
+                                <p><strong>Rationale:</strong> ${entity.evaluation_rationale}</p>
+                            </div>
+                        </body>
+                    </html>
+                `);
+                printWindow.document.close();
+                printWindow.print();
+            }
+        }
+    </script>
+</body>
+
+</html>

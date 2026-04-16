@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT024,Entity 024,Equity,Stellar Resources,China,Telecommunications,No,30.31,,,,XX120876873,96.64,,Illiquid,No,8.69,33.92,
+H02,ENT024,Entity 024,Fund,Nimbus Pharma,Turkey,Utilities,No,,,,,XX408340718,78.18,AAA,Daily,No,24.3,27.44,
+H03,ENT024,Entity 024,Government Bond,Stellar Realty,UAE,Technology,No,,17.59,6.24,2028-04-18,XX536292957,8.32,,Monthly,Yes,5.37,2.92,
+H04,ENT024,Entity 024,Corporate Bond,Vertex Realty,United Kingdom,Industrials,No,,128.01,7.04,2035-06-09,XX994954120,0.16,AAA,Weekly,Yes,-0.99,0.06,
+H05,ENT024,Entity 024,Corporate Bond,Summit Industries,Japan,Real Estate,Yes,,176.58,7.85,2033-03-10,XX311351859,101.64,A,Illiquid,No,12.13,35.67,

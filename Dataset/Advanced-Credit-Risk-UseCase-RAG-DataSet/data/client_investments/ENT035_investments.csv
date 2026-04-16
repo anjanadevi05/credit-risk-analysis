@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT035,Entity 035,Term Deposit,Orion Power,Turkey,Industrials,No,,28.79,5.01,2026-10-22,XX734087621,3.85,BBB,Weekly,No,5.13,10.66,
+H02,ENT035,Entity 035,Corporate Bond,Beta Brands,Indonesia,Energy,No,,190.21,8.68,2030-12-25,XX988938524,4.43,BB,Illiquid,No,6.81,12.26,
+H03,ENT035,Entity 035,Equity,Nimbus Tech,Spain,Telecommunications,No,6.46,,,,XX354455847,3.83,,Monthly,Yes,10.89,10.6,
+H04,ENT035,Entity 035,Government Bond,Pioneer Materials,Turkey,Energy,No,,99.5,2.13,2034-04-26,XX747389512,0.38,,Daily,No,20.32,1.05,
+H05,ENT035,Entity 035,Corporate Bond,Omega Telecom,United States,Telecommunications,No,,122.97,2.19,2030-04-12,XX394706622,2.98,A,Monthly,No,-19.47,8.25,
+H06,ENT035,Entity 035,Term Deposit,Frontier Tech,Canada,Real Estate,No,,24.32,3.42,2028-06-01,XX103069427,4.15,A,Weekly,Yes,-15.99,11.49,
+H07,ENT035,Entity 035,Fund,Delta Power,China,Utilities,No,,,,,XX709235114,7.23,BB,Monthly,No,-5.5,20.01,
+H08,ENT035,Entity 035,Term Deposit,Summit Retail,Canada,Telecommunications,Yes,,51.19,8.13,2029-08-28,XX415741702,9.28,AAA,Weekly,No,-6.69,25.69,

@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT032,Entity 032,Government Bond,Stellar Brands,China,Real Estate,No,,12.31,7.31,2033-01-04,XX783639274,3.82,,Daily,No,10.35,1.33,
+H02,ENT032,Entity 032,Fund,Stellar Holdings,South Africa,Utilities,No,,,,,XX759348525,69.32,BB,Daily,No,-6.74,24.19,
+H03,ENT032,Entity 032,Government Bond,Aurora Metals,Germany,Energy,No,,135.24,2.17,2030-06-24,XX992151647,86.93,,Monthly,No,6.32,30.33,
+H04,ENT032,Entity 032,Fund,Atlas Foods,China,Utilities,No,,,,,XX633085539,42.8,AA,Monthly,No,-11.12,14.93,
+H05,ENT032,Entity 032,Corporate Bond,Nimbus Metals,Mexico,Industrials,No,,94.56,6.42,2030-01-26,XX310405851,83.74,BBB,Illiquid,No,-16.44,29.22,

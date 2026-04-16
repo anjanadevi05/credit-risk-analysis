@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT029,Entity 029,Equity,Aurora Pharma,Spain,Consumer,No,2.32,,,,XX983926851,79.87,,Daily,No,21.25,29.62,
+H02,ENT029,Entity 029,Government Bond,Zenith Industries,United Kingdom,Consumer,No,,89.18,5.14,2029-11-06,XX386127810,40.93,,Weekly,No,7.44,15.18,
+H03,ENT029,Entity 029,Equity,Stellar Industries,Mexico,Technology,No,21.09,,,,XX860092727,30.68,,Monthly,No,23.58,11.38,
+H04,ENT029,Entity 029,Corporate Bond,Keystone Telecom,France,Technology,No,,93.39,6.17,2032-01-24,XX775848899,90.44,BB,Daily,Yes,17.51,33.54,
+H05,ENT029,Entity 029,Corporate Bond,Omega Retail,China,Real Estate,No,,13.75,6.03,2035-04-02,XX309237850,27.73,BBB,Illiquid,No,21.06,10.28,

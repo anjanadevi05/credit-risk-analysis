@@ -1,0 +1,51 @@
+entity_id,entity_name,sector,country,revenue_usd_m
+ENT001,Entity 001,Utilities,South Africa,493.0
+ENT002,Entity 002,Industrials,Italy,1809.0
+ENT003,Entity 003,Retail,United Kingdom,5636.0
+ENT004,Entity 004,Financials,India,2198.0
+ENT005,Entity 005,Materials,Germany,2916.0
+ENT006,Entity 006,Industrials,Japan,4821.0
+ENT007,Entity 007,Transportation,Netherlands,696.0
+ENT008,Entity 008,Industrials,United States,5129.0
+ENT009,Entity 009,Materials,Singapore,3753.0
+ENT010,Entity 010,Healthcare,Japan,1213.0
+ENT011,Entity 011,Industrials,Mexico,4939.0
+ENT012,Entity 012,Technology,China,5316.0
+ENT013,Entity 013,Financials,UAE,1811.0
+ENT014,Entity 014,Consumer,Singapore,5631.0
+ENT015,Entity 015,Real Estate,France,2589.0
+ENT016,Entity 016,Materials,Japan,3838.0
+ENT017,Entity 017,Technology,China,4656.0
+ENT018,Entity 018,Technology,Netherlands,2360.0
+ENT019,Entity 019,Real Estate,Singapore,4537.0
+ENT020,Entity 020,Consumer,Australia,5714.0
+ENT021,Entity 021,Utilities,Singapore,4914.0
+ENT022,Entity 022,Financials,Australia,5072.0
+ENT023,Entity 023,Technology,Singapore,5014.0
+ENT024,Entity 024,Industrials,Indonesia,4749.0
+ENT025,Entity 025,Real Estate,Netherlands,5815.0
+ENT026,Entity 026,Real Estate,Netherlands,1021.0
+ENT027,Entity 027,Energy,Italy,3213.0
+ENT028,Entity 028,Energy,Netherlands,3599.0
+ENT029,Entity 029,Technology,Brazil,4494.0
+ENT030,Entity 030,Healthcare,Australia,355.0
+ENT031,Entity 031,Energy,Italy,1884.0
+ENT032,Entity 032,Utilities,United States,4777.0
+ENT033,Entity 033,Consumer,Canada,1765.0
+ENT034,Entity 034,Financials,Canada,5457.0
+ENT035,Entity 035,Healthcare,Italy,602.0
+ENT036,Entity 036,Energy,Indonesia,1402.0
+ENT037,Entity 037,Transportation,Brazil,5670.0
+ENT038,Entity 038,Retail,United Kingdom,726.0
+ENT039,Entity 039,Healthcare,Netherlands,1299.0
+ENT040,Entity 040,Utilities,Saudi Arabia,4073.0
+ENT041,Entity 041,Technology,United Kingdom,4383.0
+ENT042,Entity 042,Retail,Mexico,1410.0
+ENT043,Entity 043,Industrials,Singapore,5902.0
+ENT044,Entity 044,Retail,Spain,4200.0
+ENT045,Entity 045,Retail,India,5569.0
+ENT046,Entity 046,Retail,Canada,1207.0
+ENT047,Entity 047,Industrials,UAE,1278.0
+ENT048,Entity 048,Technology,Japan,4396.0
+ENT049,Entity 049,Financials,India,3089.0
+ENT050,Entity 050,Energy,Japan,5452.0

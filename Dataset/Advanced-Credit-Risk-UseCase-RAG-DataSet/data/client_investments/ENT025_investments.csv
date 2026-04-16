@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT025,Entity 025,Term Deposit,Delta Metals,Australia,Consumer,No,,81.61,8.86,2029-11-12,XX865626528,57.73,BBB,Daily,No,-17.88,16.55,
+H02,ENT025,Entity 025,Corporate Bond,Helios Telecom,Netherlands,Technology,No,,41.67,3.0,2031-05-19,XX447193660,37.4,BBB,Monthly,No,8.5,10.72,
+H03,ENT025,Entity 025,Fund,Delta Retail,Spain,Telecommunications,No,,,,,XX556636915,74.06,BB,Illiquid,No,-7.8,21.23,
+H04,ENT025,Entity 025,Corporate Bond,Nimbus Resources,Italy,Energy,No,,48.05,3.7,2031-02-07,XX227919964,5.61,BB,Weekly,No,14.33,1.61,
+H05,ENT025,Entity 025,Corporate Bond,Atlas Logistics,China,Telecommunications,No,,18.46,6.28,2034-09-26,XX479273521,99.93,BBB,Illiquid,No,4.11,28.64,
+H06,ENT025,Entity 025,Corporate Bond,Pioneer Power,Spain,Real Estate,No,,59.39,6.45,2032-02-12,XX471806178,8.55,BBB,Illiquid,No,4.48,2.45,
+H07,ENT025,Entity 025,Government Bond,Helios Materials,United Kingdom,Telecommunications,No,,46.1,4.1,2035-01-18,XX305678642,65.62,,Monthly,No,13.98,18.81,

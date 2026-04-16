@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT021,Entity 021,Term Deposit,Beta Foods,Germany,Real Estate,No,,112.83,8.92,2034-08-20,XX287918916,13.31,BBB,Illiquid,Yes,-4.5,4.51,
+H02,ENT021,Entity 021,Fund,Vertex Realty,Singapore,Consumer,No,,,,,XX912330526,56.96,A,Illiquid,Yes,-18.53,19.32,
+H03,ENT021,Entity 021,Corporate Bond,Summit Logistics,France,Financials,No,,93.53,5.16,2026-02-15,XX508067901,32.65,A,Daily,Yes,13.54,11.07,
+H04,ENT021,Entity 021,Government Bond,Orion Pharma,Japan,Technology,No,,61.32,7.05,2034-06-23,XX676091450,61.4,,Monthly,No,-0.99,20.82,
+H05,ENT021,Entity 021,Fund,Keystone Telecom,Indonesia,Telecommunications,No,,,,,XX302275583,39.58,AA,Daily,No,0.82,13.42,
+H06,ENT021,Entity 021,Equity,Orion Power,Turkey,Utilities,No,29.68,,,,XX246167274,22.08,,Weekly,No,11.8,7.49,
+H07,ENT021,Entity 021,Fund,Gamma Retail,India,Consumer,No,,,,,XX995007442,39.2,AAA,Monthly,No,13.44,13.29,
+H08,ENT021,Entity 021,Fund,Delta Materials,Singapore,Financials,No,,,,,XX642834916,29.67,BB,Monthly,No,23.61,10.06,

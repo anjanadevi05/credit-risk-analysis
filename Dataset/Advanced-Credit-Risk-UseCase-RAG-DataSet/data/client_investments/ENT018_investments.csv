@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT018,Entity 018,Government Bond,Aurora Pharma,Mexico,Telecommunications,No,,33.78,4.4,2033-11-10,XX981174876,11.9,,Weekly,No,19.07,8.4,
+H02,ENT018,Entity 018,Corporate Bond,Orion Holdings,Turkey,Consumer,No,,58.48,8.96,2030-03-02,XX972414166,23.68,AA,Monthly,No,15.12,16.72,
+H03,ENT018,Entity 018,Government Bond,Beta Capital,South Africa,Real Estate,Yes,,165.52,8.09,2029-09-07,XX280513297,27.79,,Daily,No,-12.98,19.63,
+H04,ENT018,Entity 018,Fund,Omega Pharma,Italy,Industrials,Yes,,,,,XX659524320,23.49,AAA,Illiquid,Yes,8.89,16.59,
+H05,ENT018,Entity 018,Fund,Summit Materials,France,Materials,No,,,,,XX164001790,8.76,BBB,Monthly,Yes,-17.99,6.19,
+H06,ENT018,Entity 018,Term Deposit,Delta Brands,Saudi Arabia,Utilities,No,,59.0,8.88,2027-07-18,XX769906709,29.37,A,Monthly,Yes,-0.22,20.74,
+H07,ENT018,Entity 018,Term Deposit,Nimbus Telecom,United Kingdom,Industrials,No,,86.9,7.55,2027-12-02,XX146342738,5.13,BBB,Daily,No,-18.89,3.62,
+H08,ENT018,Entity 018,Government Bond,Pioneer Pharma,Germany,Consumer,No,,62.18,6.25,2032-08-09,XX748119963,11.48,,Weekly,No,7.56,8.11,

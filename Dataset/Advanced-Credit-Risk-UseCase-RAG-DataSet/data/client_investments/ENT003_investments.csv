@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT003,Entity 003,Term Deposit,Summit Pharma,France,Energy,No,,131.55,3.83,2026-03-15,XX947982443,30.87,AA,Weekly,No,-12.78,9.13,
+H02,ENT003,Entity 003,Equity,Keystone Power,United Kingdom,Telecommunications,No,25.3,,,,XX828834613,79.64,,Monthly,No,4.2,23.55,
+H03,ENT003,Entity 003,Government Bond,Orion Resources,Japan,Technology,No,,75.82,2.07,2034-09-14,XX756693443,11.4,,Illiquid,No,-15.75,3.37,
+H04,ENT003,Entity 003,Fund,Keystone Holdings,Saudi Arabia,Financials,No,,,,,XX386715250,45.41,BBB,Monthly,No,3.01,13.43,
+H05,ENT003,Entity 003,Equity,Helios Telecom,India,Utilities,No,28.69,,,,XX113249562,41.58,,Illiquid,No,-3.78,12.3,
+H06,ENT003,Entity 003,Equity,Vertex Pharma,Brazil,Materials,Yes,20.11,,,,XX277949389,53.73,,Daily,Yes,16.76,15.89,
+H07,ENT003,Entity 003,Government Bond,Atlas Metals,Japan,Telecommunications,No,,17.55,8.95,2029-05-14,XX894377761,8.97,,Illiquid,No,-6.18,2.65,
+H08,ENT003,Entity 003,Government Bond,Keystone Power,Singapore,Energy,No,,194.92,2.99,2032-07-05,XX178329930,66.56,,Monthly,No,-3.68,19.68,

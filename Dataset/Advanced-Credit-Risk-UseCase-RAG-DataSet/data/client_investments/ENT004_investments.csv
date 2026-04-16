@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT004,Entity 004,Corporate Bond,Alpha Resources,France,Materials,Yes,,10.54,5.45,2034-06-08,XX216964753,32.3,A,Monthly,No,-12.33,24.49,
+H02,ENT004,Entity 004,Government Bond,Summit Foods,Turkey,Telecommunications,No,,27.42,8.07,2028-05-05,XX228518891,36.53,,Monthly,No,21.12,27.7,
+H03,ENT004,Entity 004,Government Bond,Helios Materials,UAE,Industrials,Yes,,64.45,4.75,2029-04-21,XX321927236,18.3,,Weekly,No,-14.05,13.88,
+H04,ENT004,Entity 004,Equity,Summit Retail,Germany,Industrials,No,20.88,,,,XX217061222,24.4,,Illiquid,Yes,20.78,18.5,
+H05,ENT004,Entity 004,Equity,Vertex Foods,Italy,Consumer,No,5.63,,,,XX638862883,20.34,,Weekly,No,-8.11,15.42,

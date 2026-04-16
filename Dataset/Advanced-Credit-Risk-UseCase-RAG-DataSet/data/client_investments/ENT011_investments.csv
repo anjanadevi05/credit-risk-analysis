@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT011,Entity 011,Term Deposit,Stellar Retail,South Africa,Financials,No,,20.42,4.55,2032-11-02,XX659552179,78.43,BBB,Illiquid,No,24.34,26.47,
+H02,ENT011,Entity 011,Fund,Delta Capital,Germany,Utilities,No,,,,,XX962593842,1.66,BBB,Daily,No,21.79,0.56,
+H03,ENT011,Entity 011,Corporate Bond,Evergreen Capital,China,Healthcare,No,,87.27,5.93,2031-05-24,XX812812110,79.61,BBB,Illiquid,No,15.08,26.86,
+H04,ENT011,Entity 011,Government Bond,Beta Pharma,Saudi Arabia,Healthcare,No,,179.08,5.02,2026-09-09,XX558660757,89.57,,Illiquid,Yes,4.64,30.23,
+H05,ENT011,Entity 011,Corporate Bond,Delta Retail,UAE,Financials,No,,29.11,6.84,2033-04-15,XX853827284,47.07,AA,Daily,No,16.46,15.88,

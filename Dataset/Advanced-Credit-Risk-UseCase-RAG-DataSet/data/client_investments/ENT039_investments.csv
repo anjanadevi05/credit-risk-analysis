@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT039,Entity 039,Corporate Bond,Alpha Holdings,China,Industrials,No,,60.28,4.94,2027-06-08,XX692861603,12.15,AAA,Illiquid,No,7.44,15.59,
+H02,ENT039,Entity 039,Equity,Evergreen Realty,Saudi Arabia,Financials,No,18.13,,,,XX483946300,3.15,,Illiquid,No,-4.39,4.04,
+H03,ENT039,Entity 039,Fund,Helios Telecom,Australia,Financials,No,,,,,XX223133730,16.26,A,Daily,No,-10.18,20.86,
+H04,ENT039,Entity 039,Government Bond,Nimbus Industries,Mexico,Financials,No,,181.9,4.55,2035-02-25,XX637359161,7.43,,Weekly,No,-18.39,9.53,
+H05,ENT039,Entity 039,Government Bond,Omega Metals,Brazil,Consumer,No,,149.11,3.24,2028-05-19,XX482857516,6.08,,Weekly,No,21.38,7.8,
+H06,ENT039,Entity 039,Equity,Orion Resources,Spain,Materials,Yes,19.29,,,,XX842919395,3.53,,Daily,No,-9.36,4.53,
+H07,ENT039,Entity 039,Corporate Bond,Alpha Foods,South Africa,Financials,No,,155.49,7.57,2031-02-08,XX715952432,16.0,AA,Illiquid,No,-9.26,20.53,
+H08,ENT039,Entity 039,Government Bond,Keystone Resources,United States,Telecommunications,Yes,,101.77,3.63,2027-02-28,XX330649829,13.34,,Weekly,No,13.75,17.12,

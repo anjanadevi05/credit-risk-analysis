@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT002,Entity 002,Equity,Delta Retail,Italy,Financials,No,6.43,,,,XX398319524,23.16,,Illiquid,No,16.6,21.34,
+H02,ENT002,Entity 002,Government Bond,Summit Telecom,South Africa,Industrials,No,,78.08,2.28,2030-09-18,XX328163195,0.12,,Weekly,No,13.82,0.11,
+H03,ENT002,Entity 002,Term Deposit,Omega Tech,Germany,Materials,No,,164.95,2.79,2033-06-26,XX274543616,8.27,A,Monthly,No,-14.05,7.62,
+H04,ENT002,Entity 002,Term Deposit,Stellar Pharma,Indonesia,Technology,No,,94.49,7.97,2033-06-07,XX399868804,4.02,AAA,Daily,Yes,17.95,3.7,
+H05,ENT002,Entity 002,Equity,Pioneer Realty,Spain,Materials,No,1.7,,,,XX269416699,10.73,,Monthly,No,6.38,9.88,
+H06,ENT002,Entity 002,Corporate Bond,Orion Materials,Australia,Telecommunications,No,,39.11,4.84,2033-09-26,XX963012535,30.31,A,Weekly,No,-9.86,27.92,
+H07,ENT002,Entity 002,Term Deposit,Keystone Brands,Singapore,Industrials,Yes,,185.81,6.28,2029-06-15,XX936719926,31.94,A,Daily,No,-9.75,29.42,

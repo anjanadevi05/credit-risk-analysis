@@ -1,0 +1,88 @@
+/* EnterEmailPage.css */
+
+/* Full page container */
+.enter-email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9fafb; /* light gray */
+}
+
+/* Card container */
+.enter-email-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  width: 24rem; /* 384px */
+}
+
+/* Header */
+.enter-email-card h2 {
+  font-size: 1.75rem; /* text-2xl */
+  font-weight: 600;
+  text-align: center;
+  color: #16a34a; /* green-600 */
+  margin-bottom: 1rem; /* 4 */
+}
+
+/* Subtitle */
+.enter-email-card p {
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563; /* gray-600 */
+  text-align: center;
+  margin-bottom: 1rem; /* 4 */
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 1.5rem; /* 6 */
+}
+
+/* Label */
+.form-group label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  color: #374151; /* gray-700 */
+  margin-bottom: 0.5rem; /* 2 */
+}
+
+/* Input field */
+.form-group input {
+  width: 100%;
+  padding: 0.5rem; /* 2 */
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #34d399; /* green-400 */
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.3);
+}
+
+/* Button */
+.btn-send-otp {
+  width: 100%;
+  padding: 0.5rem; /* 2 */
+  background-color: #22c55e; /* green-500 */
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+}
+
+.btn-send-otp:hover {
+  background-color: #16a34a; /* green-600 */
+}
+
+.btn-send-otp:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.5); /* green ring */
+}

@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT007,Entity 007,Corporate Bond,Keystone Tech,Singapore,Real Estate,No,,17.51,7.12,2030-11-02,XX496166407,3.91,A,Daily,No,3.78,9.36,
+H02,ENT007,Entity 007,Fund,Gamma Materials,China,Materials,No,,,,,XX291885746,11.55,BBB,Weekly,No,11.59,27.66,
+H03,ENT007,Entity 007,Term Deposit,Pioneer Retail,Spain,Technology,No,,85.91,6.15,2035-12-14,XX279859427,5.98,BBB,Weekly,No,21.87,14.32,
+H04,ENT007,Entity 007,Fund,Nimbus Telecom,Italy,Healthcare,No,,,,,XX657701643,14.53,BB,Weekly,No,-12.57,34.79,
+H05,ENT007,Entity 007,Fund,Delta Materials,Netherlands,Consumer,No,,,,,XX620029595,4.12,BB,Daily,No,-8.61,9.87,
+H06,ENT007,Entity 007,Term Deposit,Evergreen Capital,South Africa,Energy,No,,53.49,5.63,2032-03-28,XX754118538,1.67,BB,Weekly,No,0.12,4.0,

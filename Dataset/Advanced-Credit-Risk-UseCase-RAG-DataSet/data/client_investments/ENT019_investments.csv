@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT019,Entity 019,Government Bond,Nimbus Telecom,Saudi Arabia,Financials,No,,134.78,6.48,2030-11-18,XX164457992,0.29,,Weekly,No,-15.83,0.11,
+H02,ENT019,Entity 019,Term Deposit,Gamma Materials,Indonesia,Telecommunications,No,,59.76,2.95,2029-09-13,XX176529896,39.53,B,Monthly,No,-18.67,14.52,
+H03,ENT019,Entity 019,Fund,Beta Materials,India,Materials,No,,,,,XX949321311,35.08,A,Monthly,Yes,-2.47,12.89,
+H04,ENT019,Entity 019,Corporate Bond,Aurora Realty,Brazil,Financials,No,,99.45,5.09,2030-05-24,XX678246577,34.9,BB,Monthly,No,-11.95,12.82,
+H05,ENT019,Entity 019,Government Bond,Omega Logistics,South Africa,Technology,No,,37.38,2.75,2029-09-11,XX938764723,44.53,,Weekly,Yes,-2.12,16.36,
+H06,ENT019,Entity 019,Equity,Alpha Holdings,Germany,Energy,No,11.62,,,,XX591492192,32.37,,Daily,No,20.33,11.89,
+H07,ENT019,Entity 019,Corporate Bond,Orion Telecom,Japan,Utilities,No,,129.0,6.56,2033-08-19,XX406367887,36.25,BBB,Weekly,No,22.42,13.32,
+H08,ENT019,Entity 019,Government Bond,Zenith Tech,Germany,Industrials,No,,30.23,4.16,2029-08-13,XX388506154,49.27,,Weekly,No,13.66,18.1,

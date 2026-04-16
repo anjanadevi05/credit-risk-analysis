@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT017,Entity 017,Term Deposit,Nimbus Capital,Germany,Real Estate,No,,174.25,4.82,2031-08-22,XX985250191,28.48,AAA,Daily,No,23.03,10.19,
+H02,ENT017,Entity 017,Government Bond,Orion Brands,Saudi Arabia,Real Estate,Yes,,157.31,6.2,2035-03-21,XX322188732,61.35,,Weekly,Yes,-12.92,21.96,
+H03,ENT017,Entity 017,Fund,Orion Materials,Brazil,Utilities,No,,,,,XX201487920,40.66,AA,Weekly,No,1.79,14.55,
+H04,ENT017,Entity 017,Equity,Stellar Retail,Indonesia,Energy,No,26.54,,,,XX363152939,48.52,,Daily,No,1.55,17.37,
+H05,ENT017,Entity 017,Corporate Bond,Zenith Telecom,India,Healthcare,No,,6.49,3.16,2033-08-15,XX300665748,0.58,A,Daily,No,5.58,0.21,
+H06,ENT017,Entity 017,Equity,Frontier Tech,Turkey,Consumer,No,29.31,,,,XX215328263,83.73,,Illiquid,Yes,1.93,29.97,
+H07,ENT017,Entity 017,Government Bond,Frontier Industries,Brazil,Energy,No,,45.79,7.21,2029-09-12,XX982205201,16.04,,Illiquid,No,23.19,5.74,

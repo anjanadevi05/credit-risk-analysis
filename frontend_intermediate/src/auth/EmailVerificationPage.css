@@ -1,0 +1,119 @@
+/* EmailVerificationPage.css */
+
+/* Full page container */
+.email-verification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9fafb; /* gray-50 */
+}
+
+/* Card container */
+.email-verification-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  width: 24rem; /* 384px */
+}
+
+/* Header */
+.email-verification-card h2 {
+  font-size: 1.75rem; /* text-2xl */
+  font-weight: 600;
+  text-align: center;
+  color: #16a34a; /* green-600 */
+  margin-bottom: 1rem; /* 4 */
+}
+
+/* Subtitle */
+.email-verification-card p {
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563; /* gray-600 */
+  text-align: center;
+  margin-bottom: 1rem; /* 4 */
+}
+
+/* Edit email button */
+.email-edit-btn {
+  color: #34d399; /* green-400 */
+  cursor: pointer;
+  padding-left: 0.5rem; /* pl-2 */
+  border: none;
+  background: none;
+}
+
+/* OTP input container */
+.otp-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* 2 */
+  margin-bottom: 1.5rem; /* 6 */
+}
+
+/* OTP input boxes */
+.otp-input-container input {
+  border: 1px solid #d1d5db; /* gray-300 */
+  width: 3rem; /* 12 */
+  height: 3rem; /* 12 */
+  border-radius: 0.5rem; /* rounded-lg */
+  text-align: center;
+  font-size: 1.25rem; /* text-lg */
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.otp-input-container input:focus {
+  border-color: #34d399; /* green-400 */
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.3);
+}
+
+/* Verify button */
+.btn-verify {
+  width: 100%;
+  padding: 0.5rem; /* py-2 */
+  background-color: #22c55e; /* green-500 */
+  color: #ffffff;
+  border-radius: 0.5rem; /* rounded-lg */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+}
+
+.btn-verify:hover {
+  background-color: #16a34a; /* green-600 */
+}
+
+.btn-verify:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.5);
+}
+
+/* Resend OTP */
+.resend-otp {
+  font-size: 0.875rem; /* text-sm */
+  text-align: center;
+  color: #4b5563; /* gray-600 */
+  margin-top: 1rem; /* mt-4 */
+}
+
+.resend-otp button {
+  border: none;
+  background: none;
+  font-weight: 500;
+}
+
+.resend-otp .disabled {
+  cursor: not-allowed;
+  color: #9ca3af; /* gray-400 */
+  text-decoration: none;
+}
+
+.resend-otp .enabled {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #34d399; /* green-400 */
+}

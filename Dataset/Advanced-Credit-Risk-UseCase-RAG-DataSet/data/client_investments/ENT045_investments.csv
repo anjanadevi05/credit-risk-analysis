@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT045,Entity 045,Government Bond,Pioneer Holdings,Canada,Real Estate,No,,51.36,8.99,2029-01-03,XX428808365,99.71,,Weekly,No,-14.76,29.84,
+H02,ENT045,Entity 045,Corporate Bond,Beta Tech,Saudi Arabia,Consumer,Yes,,17.87,6.3,2029-05-09,XX319173552,69.41,B,Illiquid,No,8.67,20.77,
+H03,ENT045,Entity 045,Corporate Bond,Nimbus Realty,Spain,Telecommunications,No,,16.36,6.14,2030-07-16,XX160190873,1.16,BBB,Daily,No,13.32,0.35,
+H04,ENT045,Entity 045,Equity,Stellar Realty,Saudi Arabia,Telecommunications,No,33.64,,,,XX532582673,46.7,,Daily,Yes,-4.33,13.98,
+H05,ENT045,Entity 045,Corporate Bond,Gamma Pharma,United States,Real Estate,No,,163.09,4.6,2027-02-15,XX422664500,25.15,B,Illiquid,No,10.69,7.53,
+H06,ENT045,Entity 045,Term Deposit,Gamma Tech,Indonesia,Healthcare,No,,186.38,8.68,2026-08-09,XX586829111,92.01,BBB,Daily,No,24.4,27.54,

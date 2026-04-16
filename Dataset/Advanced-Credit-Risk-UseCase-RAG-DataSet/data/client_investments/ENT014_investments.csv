@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT014,Entity 014,Fund,Helios Realty,Brazil,Energy,No,,,,,XX885446823,58.73,AAA,Weekly,No,-9.53,17.38,
+H02,ENT014,Entity 014,Term Deposit,Zenith Metals,Germany,Telecommunications,No,,186.75,2.61,2027-01-02,XX437565709,39.19,AAA,Weekly,No,-2.63,11.6,
+H03,ENT014,Entity 014,Government Bond,Zenith Retail,United Kingdom,Energy,No,,105.35,6.38,2028-01-28,XX456381848,61.85,,Weekly,No,17.05,18.31,
+H04,ENT014,Entity 014,Term Deposit,Evergreen Tech,India,Industrials,No,,190.82,3.16,2032-06-22,XX584924682,9.15,BBB,Daily,No,2.34,2.71,
+H05,ENT014,Entity 014,Fund,Evergreen Logistics,UAE,Consumer,No,,,,,XX667880541,48.67,BBB,Monthly,No,9.71,14.41,
+H06,ENT014,Entity 014,Equity,Vertex Pharma,UAE,Materials,Yes,17.36,,,,XX190552102,36.68,,Illiquid,No,-13.76,10.86,
+H07,ENT014,Entity 014,Equity,Delta Capital,Netherlands,Healthcare,No,30.03,,,,XX132995241,65.6,,Daily,No,9.59,19.42,
+H08,ENT014,Entity 014,Fund,Nimbus Realty,Italy,Financials,No,,,,,XX706758382,17.99,BBB,Monthly,No,-7.66,5.32,

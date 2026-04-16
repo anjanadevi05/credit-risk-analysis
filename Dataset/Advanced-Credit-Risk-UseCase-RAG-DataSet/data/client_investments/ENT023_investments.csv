@@ -1,0 +1,9 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT023,Entity 023,Equity,Delta Telecom,UAE,Materials,No,8.7,,,,XX521585783,50.5,,Illiquid,No,12.75,16.79,
+H02,ENT023,Entity 023,Corporate Bond,Aurora Metals,Italy,Utilities,No,,23.42,5.75,2028-09-09,XX412281254,48.81,BB,Illiquid,No,-18.66,16.23,
+H03,ENT023,Entity 023,Corporate Bond,Omega Metals,Spain,Telecommunications,No,,151.8,2.57,2028-05-08,XX232692211,45.29,A,Illiquid,Yes,19.0,15.06,
+H04,ENT023,Entity 023,Government Bond,Zenith Power,China,Materials,No,,87.97,7.98,2029-07-04,XX685199937,47.11,,Weekly,No,22.64,15.66,
+H05,ENT023,Entity 023,Corporate Bond,Vertex Logistics,Turkey,Financials,No,,122.6,3.51,2027-08-26,XX191835808,44.75,A,Illiquid,No,-19.33,14.88,
+H06,ENT023,Entity 023,Term Deposit,Beta Holdings,Italy,Financials,No,,44.78,6.98,2034-04-04,XX296638717,23.68,BBB,Daily,No,-18.89,7.87,
+H07,ENT023,Entity 023,Term Deposit,Vertex Tech,Germany,Industrials,No,,144.83,5.99,2029-07-27,XX819431366,12.95,BBB,Daily,No,-2.19,4.3,
+H08,ENT023,Entity 023,Fund,Frontier Industries,United Kingdom,Consumer,No,,,,,XX352788674,27.74,A,Weekly,Yes,-3.73,9.22,

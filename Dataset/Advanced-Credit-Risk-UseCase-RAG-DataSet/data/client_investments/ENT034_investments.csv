@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT034,Entity 034,Government Bond,Orion Metals,Indonesia,Utilities,No,,17.62,5.1,2034-12-26,XX763947965,65.82,,Illiquid,No,8.48,20.1,
+H02,ENT034,Entity 034,Fund,Stellar Materials,France,Telecommunications,No,,,,,XX974086809,68.46,BB,Weekly,No,-16.3,20.91,
+H03,ENT034,Entity 034,Fund,Beta Foods,Germany,Technology,No,,,,,XX969750496,7.37,BBB,Daily,Yes,4.22,2.25,
+H04,ENT034,Entity 034,Term Deposit,Orion Materials,China,Industrials,No,,147.14,6.73,2033-11-15,XX957677429,43.9,AAA,Daily,No,6.92,13.41,
+H05,ENT034,Entity 034,Government Bond,Nimbus Logistics,Brazil,Healthcare,Yes,,50.92,2.09,2033-08-04,XX362114366,22.93,,Daily,No,19.17,7.0,
+H06,ENT034,Entity 034,Fund,Nimbus Realty,Germany,Utilities,No,,,,,XX498752793,51.81,BBB,Illiquid,No,11.48,15.82,
+H07,ENT034,Entity 034,Equity,Helios Metals,Germany,Healthcare,Yes,32.86,,,,XX969952956,67.13,,Monthly,No,-13.73,20.5,

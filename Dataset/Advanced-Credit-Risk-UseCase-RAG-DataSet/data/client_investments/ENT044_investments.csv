@@ -1,0 +1,7 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT044,Entity 044,Term Deposit,Evergreen Brands,Saudi Arabia,Materials,Yes,,95.55,6.34,2033-08-09,XX778705742,51.4,A,Weekly,Yes,5.22,20.4,
+H02,ENT044,Entity 044,Government Bond,Evergreen Industries,Netherlands,Financials,Yes,,29.3,3.91,2027-08-06,XX186049690,48.43,,Monthly,No,-15.61,19.22,
+H03,ENT044,Entity 044,Government Bond,Helios Materials,Spain,Healthcare,No,,38.78,3.63,2029-02-12,XX295489924,59.53,,Daily,No,21.77,23.62,
+H04,ENT044,Entity 044,Fund,Pioneer Telecom,Japan,Materials,No,,,,,XX797667851,25.36,AA,Illiquid,No,-5.12,10.06,
+H05,ENT044,Entity 044,Equity,Nimbus Logistics,Spain,Technology,No,19.74,,,,XX314005387,38.25,,Illiquid,No,15.79,15.18,
+H06,ENT044,Entity 044,Government Bond,Delta Logistics,Germany,Real Estate,No,,11.56,4.14,2027-02-20,XX756071736,29.03,,Monthly,No,7.34,11.52,

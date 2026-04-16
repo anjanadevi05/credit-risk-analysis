@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT022,Entity 022,Government Bond,Keystone Industries,Italy,Financials,Yes,,199.26,2.26,2031-08-12,XX715573717,23.36,,Illiquid,No,22.1,7.68,
+H02,ENT022,Entity 022,Government Bond,Helios Realty,South Africa,Financials,Yes,,199.01,3.65,2034-08-28,XX509974789,102.1,,Weekly,No,-17.75,33.55,
+H03,ENT022,Entity 022,Government Bond,Vertex Industries,Australia,Telecommunications,No,,171.96,6.33,2027-08-12,XX904687944,139.05,,Daily,Yes,8.92,45.69,
+H04,ENT022,Entity 022,Government Bond,Nimbus Logistics,France,Real Estate,No,,45.99,7.19,2035-07-16,XX964423487,6.9,,Monthly,No,23.47,2.27,
+H05,ENT022,Entity 022,Equity,Summit Power,Germany,Industrials,No,30.27,,,,XX795996591,32.91,,Daily,No,-1.55,10.81,

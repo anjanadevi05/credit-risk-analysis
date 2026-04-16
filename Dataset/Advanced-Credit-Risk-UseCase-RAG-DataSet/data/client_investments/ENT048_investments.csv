@@ -1,0 +1,8 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT048,Entity 048,Term Deposit,Summit Telecom,Netherlands,Materials,No,,85.5,7.86,2026-11-08,XX616626177,25.34,BB,Weekly,No,-11.36,9.61,
+H02,ENT048,Entity 048,Government Bond,Gamma Foods,India,Consumer,No,,31.02,4.39,2026-07-07,XX387776840,73.92,,Daily,No,-2.39,28.03,
+H03,ENT048,Entity 048,Equity,Keystone Pharma,Canada,Telecommunications,No,5.59,,,,XX806751290,21.41,,Monthly,No,20.66,8.12,
+H04,ENT048,Entity 048,Equity,Evergreen Brands,France,Real Estate,No,4.05,,,,XX207006843,21.09,,Illiquid,No,-5.74,8.0,
+H05,ENT048,Entity 048,Equity,Omega Resources,Netherlands,Utilities,No,28.7,,,,XX719957670,85.4,,Weekly,No,5.07,32.38,
+H06,ENT048,Entity 048,Term Deposit,Evergreen Logistics,Japan,Utilities,No,,35.3,5.8,2032-08-03,XX598912138,21.39,AAA,Illiquid,No,13.57,8.11,
+H07,ENT048,Entity 048,Corporate Bond,Helios Holdings,Australia,Consumer,Yes,,137.54,2.46,2033-07-08,XX972560222,15.21,AAA,Illiquid,No,-5.57,5.77,

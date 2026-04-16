@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT030,Entity 030,Government Bond,Alpha Power,United States,Industrials,No,,132.74,8.97,2026-10-26,XX870589333,6.3,,Weekly,No,7.41,29.58,
+H02,ENT030,Entity 030,Corporate Bond,Helios Brands,United Kingdom,Energy,Yes,,155.32,3.8,2026-06-12,XX568720850,5.95,BBB,Illiquid,Yes,7.02,27.93,
+H03,ENT030,Entity 030,Government Bond,Nimbus Power,Turkey,Real Estate,No,,148.07,3.81,2032-10-17,XX799508619,3.07,,Illiquid,No,-4.89,14.41,
+H04,ENT030,Entity 030,Equity,Frontier Telecom,Saudi Arabia,Materials,No,24.99,,,,XX931511554,3.64,,Monthly,No,11.74,17.09,
+H05,ENT030,Entity 030,Fund,Omega Resources,UAE,Healthcare,No,,,,,XX160934407,2.34,BBB,Weekly,No,-18.44,10.99,

@@ -1,0 +1,6 @@
+holding_id,entity_id,entity_name,instrument_type,issuer_name,issuer_country,issuer_sector,related_party,ownership_pct,face_value_usd_m,coupon_pct,maturity_date,ISIN_or_ID,market_value_usd_m,rating,liquidity_bucket,pledged_as_collateral,last_12m_return_pct,concentration_pct_of_portfolio,notes
+H01,ENT042,Entity 042,Term Deposit,Nimbus Power,India,Real Estate,Yes,,27.91,8.98,2026-07-10,XX477678564,27.45,B,Monthly,No,20.74,32.44,
+H02,ENT042,Entity 042,Corporate Bond,Keystone Power,UAE,Consumer,Yes,,55.46,3.97,2026-02-23,XX695834623,14.84,A,Monthly,No,-14.63,17.54,
+H03,ENT042,Entity 042,Term Deposit,Alpha Power,South Africa,Financials,No,,106.04,7.7,2034-05-12,XX400705814,9.14,A,Illiquid,No,19.56,10.8,
+H04,ENT042,Entity 042,Term Deposit,Helios Capital,Indonesia,Financials,No,,26.52,7.9,2030-06-01,XX650862880,11.21,A,Weekly,No,24.35,13.25,
+H05,ENT042,Entity 042,Government Bond,Summit Industries,Indonesia,Real Estate,No,,195.09,7.81,2034-04-10,XX363084980,21.97,,Illiquid,Yes,14.17,25.97,
