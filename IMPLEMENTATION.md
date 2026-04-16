@@ -6,7 +6,7 @@ This document describes what the project does today, how to run it, data require
 
 1. **MySQL (`company_data.entities_final_1`)** — Entity master data, optional `metrics_json` (financial CSV fields), optional `evaluation_cache` (last evaluate response), `score` (gauge number).
 2. **Node backend (`backend_intermediate`, port 3000)** — CRUD for entities, score updates, evaluation cache, metrics upload.
-3. **Python LLM API (`llm_intermediate/llm.py`, port 5000)** — Loads rule CSV + company CSV; evaluates factors; builds **deterministic** `advanced_details`; merges **RAG + Ollama JSON** into structured panels. **Ollama is still used** (embeddings + chat JSON). The **main-dashboard gauge narrative** is a short, rule-based paragraph (`gauge_narrative_summary` in `rag.py`: bucket, pressure drivers, offsets, medium count, recommended action). The **Advanced report “Executive summary”** uses the longer **credit-memorandum** text (`_fallback_summary` in `rag.py`), stored as `advanced_details.summary` and duplicated in `memorandum_summary` on the evaluate response. Each evaluate also writes **`llm_intermediate/results/eval_<entity>_<timestamp>.json`** plus a line in **`results/metrics_log.jsonl`** (composite score, RAG flags — similar in spirit to a coverage/metrics artifact).
+3. **Python LLM API (`llm_intermediate/llm_groq.py`, port 5000 / 10000)** — Loads rule CSV + company CSV; evaluates factors; builds **deterministic** `advanced_details`; merges **RAG + Groq API JSON** into structured panels. **Groq is deployed** for cloud environments to avoid heavy local GPU usage. The **main-dashboard gauge narrative** is a short, rule-based paragraph (`gauge_narrative_summary` in `rag_groq.py`: bucket, pressure drivers, offsets, medium count, recommended action). The **Advanced report “Executive summary”** uses the longer **credit-memorandum** text (`_fallback_summary` in `rag_groq.py`), stored as `advanced_details.summary` and duplicated in `memorandum_summary` on the evaluate response. Each evaluate also writes **`llm_intermediate/results/eval_<entity>_<timestamp>.json`** plus a line in **`results/metrics_log.jsonl`** (composite score, RAG flags — similar in spirit to a coverage/metrics artifact).
 4. **Qdrant (embedded, on disk under `llm_intermediate/vector_store/`)** — Vector index of threshold rules for RAG.
 5. **React frontend (`frontend_intermediate`, Vite)** — Dashboard, login, advanced report page, add entity + optional metrics CSV.
 
@@ -93,10 +93,10 @@ If columns already exist, skip or ignore duplicate-column errors.
 1. **MySQL** running with `company_data` and table `entities_final_1` (plus migration above).
 2. **Ollama** running with models (e.g. `mistral`, `nomic-embed-text`).
 3. From repo root:
-   - First-time: `setup_and_run.bat`
-   - Later: `start_only.bat`
+- First-time (Groq): `setup_and_run_groq.bat`
+   - Later: `start_groq.bat`
 
-Scripts start LLM (port 5000), wait, **retry reindex**, then backend (3000) and frontend (Vite dev server).
+Scripts start the Node backend (3000), Vite dev server, and Python API via standard local scripts.
 
 ### Reindex returns 500
 
