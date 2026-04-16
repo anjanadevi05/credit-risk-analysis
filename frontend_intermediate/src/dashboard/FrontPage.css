@@ -17,7 +17,7 @@
 .dashboard-header {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  padding: 30px 40px;
+  padding: 20px 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +36,7 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #667eea, #764ba2);
   -webkit-background-clip: text;
@@ -46,7 +46,7 @@
 
 .subtitle {
   color: #6b7280;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 /* Stats Cards */
@@ -58,13 +58,13 @@
 
 .stat-card {
   background: linear-gradient(135deg, #fff, #f8fafc);
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   gap: 15px;
-  min-width: 180px;
+  min-width: 150px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .stat-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   /* Emojis do not render correctly with gradient text-fill; show native color. */
   background: none;
@@ -96,13 +96,13 @@
 
 .stat-value {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1f2937;
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -110,7 +110,7 @@
 
 /* Controls Section */
 .controls-section {
-  padding: 30px 40px;
+  padding: 20px 30px;
 }
 
 .controls-container {
@@ -139,8 +139,8 @@
 
 .search-submit-btn {
   flex-shrink: 0;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 12px;
   border: 2px solid #e5e7eb;
   background: #f8fafc;
@@ -168,10 +168,10 @@
 
 .search-input {
   width: 300px;
-  padding: 12px 16px;
+  padding: 10px 14px;
   border: 2px solid #e5e7eb;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   background: white;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -185,10 +185,10 @@
 }
 
 .filter-select {
-  padding: 12px 20px;
+  padding: 10px 16px;
   border: 2px solid #e5e7eb;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -206,10 +206,10 @@
 .eval-all-button {
   background: linear-gradient(135deg, #10b981, #059669);
   color: white;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border: none;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -236,7 +236,7 @@
 
 /* Table Section */
 .table-section {
-  padding: 0 40px 40px;
+  padding: 0 30px 30px;
 }
 
 .table-container {
@@ -282,11 +282,11 @@
 }
 
 .table-header th {
-  padding: 18px 20px;
+  padding: 14px 16px;
   text-align: left;
   font-weight: 600;
   color: #374151;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border-bottom: 2px solid #e5e7eb;
@@ -306,7 +306,7 @@
 }
 
 .table-row td {
-  padding: 20px;
+  padding: 14px 16px;
   color: #4b5563;
 }
 
@@ -381,10 +381,10 @@
 .eval-button {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border: none;
-  border-radius: 10px;
-  font-size: 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -698,10 +698,10 @@
 .view-button {
   background: #f1f5f9;
   color: #475569;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  font-size: 0.85rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
