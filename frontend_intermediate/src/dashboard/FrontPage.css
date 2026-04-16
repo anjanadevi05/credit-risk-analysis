@@ -927,23 +927,56 @@
   .dashboard-header,
   .controls-section,
   .table-section {
-    padding: 20px;
+    padding: 15px 10px;
   }
   
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .header-content {
+    gap: 15px;
   }
   
   .stats-container {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   
   .stat-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
   }
   
+  .controls-container {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+  }
+
+  .search-filter-group {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .search-wrapper {
+      width: 100%;
+  }
+  
+  .search-input {
+      width: 100%;
+  }
+
+  .filter-select {
+      width: 100%;
+  }
+  
+  .eval-all-button {
+      width: 100%;
+      justify-content: center;
+  }
+
   .factors-grid {
     grid-template-columns: 1fr;
   }
@@ -954,15 +987,28 @@
   }
   
   .modal-header {
-    padding: 30px 20px 15px;
+    padding: 20px 15px 10px;
   }
   
   .score-section,
   .factors-section,
   .summary-section {
-    padding: 15px 20px 30px;
+    padding: 15px 15px 20px;
   }
 
+  .add-entity-form,
+  .csv-import-panel {
+      padding: 0 15px 20px;
+  }
+  
+  .add-entity-mode-tabs {
+      margin: 0 15px 16px;
+  }
+
+  .score-indicators {
+      flex-direction: column;
+      gap: 10px;
+  }
 }
 
 /* Scrollbar Styling */
