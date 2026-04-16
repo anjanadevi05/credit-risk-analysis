@@ -1,5 +1,5 @@
 import express from "express";
-import mysql from "mysql";
+import mysql from "mysql2";
 import bodyparser from "body-parser";
 import cors from "cors";
 import route from "./routes/routes.js";
