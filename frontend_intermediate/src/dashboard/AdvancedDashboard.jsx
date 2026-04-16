@@ -5,6 +5,7 @@ import { buildEvaluatePayload } from "../utils/evaluatePayload.js";
 import { splitEvaluationLogic } from "../utils/splitEvaluationLogic.js";
 import { MemorandumBody } from "../utils/MemorandumBody.jsx";
 import { stripGaugeRecommendedAction } from "../utils/gaugeSummaryDisplay.js";
+import { getDisplayRiskScore } from "../utils/riskDisplay.js";
 import "./AdvancedDashboard.css";
 
 const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
@@ -109,7 +110,59 @@ const AdvancedDashboard = () => {
         setGenError("API returned no advanced_details — check LLM server logs for JSON errors.");
         return;
       }
-      setResult({ ...selected, ...data });
+      
+      const evaluatedData = { ...selected, ...data };
+      setResult(evaluatedData);
+
+      const finalScore = getDisplayRiskScore(evaluatedData);
+
+      // 1. Update Score in Database
+      if (finalScore !== undefined && finalScore !== null) {
+        try {
+          await axios.put(`${API_URL}/UpdateScore`, {
+            entity_id: evaluatedData.entity_id,
+            score: finalScore,
+          });
+        } catch (dbError) {
+          console.error(`Failed to update score in DB for entity ${evaluatedData.entity_id}:`, dbError);
+        }
+      }
+
+      // 2. Persist Cache in Database
+      const cache = {
+        factors: evaluatedData.factors,
+        summary: evaluatedData.summary,
+        memorandum_summary: evaluatedData.memorandum_summary,
+        final_evaluation: evaluatedData.final_evaluation,
+        advanced_details: evaluatedData.advanced_details,
+        final_confidence: evaluatedData.final_confidence,
+        rag: evaluatedData.rag,
+      };
+      
+      try {
+        await axios.put(`${API_URL}/UpdateEvaluation`, {
+          entity_id: evaluatedData.entity_id,
+          score: finalScore,
+          evaluation_cache: cache,
+        });
+      } catch (dbError) {
+        console.error("Failed to persist evaluation cache:", dbError);
+      }
+
+      // 3. Update local state so Open Saved Evaluation unlocks without reloading the page
+      setEntities((prev) =>
+        prev.map((e) => {
+          if (String(e.entity_id) === String(evaluatedData.entity_id)) {
+            return {
+              ...e,
+              last_evaluation: cache,
+              score: finalScore !== undefined && finalScore !== null ? finalScore : e.score
+            };
+          }
+          return e;
+        })
+      );
+
     } catch (err) {
       console.error("Error evaluating.", err);
       const msg =
