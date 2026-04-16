@@ -411,6 +411,11 @@ def test():
     return jsonify({"message": "Deployment Test route works with Groq!"})
 
 
+@app.route("/health")
+def health_check():
+    return jsonify({"status": "healthy"}), 200
+
+
 @app.route("/rag/reindex", methods=["POST"])
 def rag_reindex():
     if df_rules.empty:
