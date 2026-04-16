@@ -13,16 +13,16 @@ The system has **four** main processes:
 | ------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **Frontend**        | React (Vite), Chart.js            | Entity dashboard, risk gauge, factor grid, advanced report UI, CSV import UX                                                |
 | **Backend API**     | Node.js, Express, MySQL           | CRUD for entities, `metrics_json`, `evaluation_cache`, scores                                                               |
-| **LLM / rules API** | Python, Flask                     | Load dataset + factor rules CSVs, score each factor, build **composite** and **advanced** report, optional **RAG** + Ollama |
-| **RAG store**       | Qdrant (local), Ollama embeddings | Vector index over rule text; retrieval to condition LLM JSON for dashboard panels                                           |
+| **LLM / rules API** | Python, Flask, Groq API           | Load dataset + factor rules CSVs, score each factor, build **composite** and **advanced** report, optional **RAG**     |
+| **RAG store**       | Qdrant (local), Python Embeddings | Vector index over rule text; retrieval to condition LLM JSON for dashboard panels                                           |
 
 
 **Typical flow**
 
 1. User opens the **Entity Risk Dashboard** (React).
 2. Backend serves entities from MySQL (`entities_final_1`), including merged `metrics_json` and cached `evaluation_cache` when present.
-3. User clicks **Evaluate** → browser `POST`s entity payload to Flask `**http://127.0.0.1:5000/`** with `use_rag: true` by default.
-4. Flask evaluates every factor against `factor_thresholds_evaluator_global-truth.csv`, derives **final bucket** (with reconciliation vs composite and watch-list size), builds **advanced_details**, optionally runs **RAG + Ollama**, returns JSON.
+3. User clicks **Evaluate** → browser `POST`s entity payload to the Flask Backend (Render API) with `use_rag: true` by default.
+4. Flask evaluates every factor against `factor_thresholds_evaluator_global-truth.csv`, derives **final bucket** (with reconciliation vs composite and watch-list size), builds **advanced_details**, optionally runs **RAG** using fast Groq models, returns JSON.
 5. Frontend updates the **gauge** using `**advanced_details.composite_score`** (higher = more credit risk), shows the **short** top-level `**summary`** next to the gauge, and persists `**summary**`, `**memorandum_summary**`, and `**advanced_details**` via Node `**UpdateEvaluation**` / `**UpdateScore**`.
 
 ---
